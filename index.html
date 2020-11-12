@@ -1,0 +1,206 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/c9da5a481d.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- animation on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+  <title>ke be le</title>
+</head>
+
+<body>
+  <header id="header">
+    <a href="#" class="logo">kebele</a>
+    <ul>
+      <li><a href="#home" class="active" onclick="toggle()">home</a></li>
+      <li><a href="#portfolio" onclick="toggle()">portfolio</a></li>
+      <li><a href="#certificates" onclick="toggle()">certificates</a></li>
+      <li><a href="#about" onclick="toggle()">about</a></li>
+    </ul>
+    <div class="toggle" onclick="toggle()"></div>
+  </header>
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="text-center mx-auto">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+          coder
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          html + css + js
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+          react/next + vue/nuxt
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+          node + mongo
+        </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="offset-sm-2 col-sm-8">
+          <div class="headerText text-center">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+              portfolio
+            </h2>
+          </div>
+          <div id="filters" class="button-group text-center mb-3 col-md-12" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="700">
+            <button class="button btn btn-danger mr-2" data-filter=".html">
+              html/css
+            </button>
+            <button class="button btn btn-secondary" data-filter=".js">
+              javascript
+            </button>
+            <button class="button btn btn-info m-2" data-filter=".vue">
+              vue
+            </button>
+            <button class="button btn btn-primary mr-2" data-filter=".react">
+              react
+            </button>
+            <button class="button btn btn-success is-checked mr-2" data-filter="*">
+              show all
+            </button>
+          </div>
+        </div>
+      </div>
+<div class="grid2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+
+
+<div class="row proje"></div>
+
+</div>
+        
+
+          
+        
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="container">
+      <div class="row">
+        <div class="offset-sm-2 col-sm-8">
+          <div class="headerText text-center">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+              certificates
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="certi" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <!-- <div class="certificate row"></div> -->
+
+        <div class="row">
+          <div class="column col-sm-6">
+            <img src="certs/responsive_web_design.png" style="width: 100%" />
+          </div>
+          <div class="column col-sm-6">
+            <img src="certs/javascript_algorithms_n_data_structures.png" style="width: 100%" />
+          </div>
+          <div class="column col-sm-6 mt-1">
+            <img src="certs/front_end_libraries.png" style="width: 100%" />
+          </div>
+          <div class="column col-sm-6 mt-1">
+            <img src="certs/20_web_projects_kebele.jpg" style="width: 100%" />
+          </div>
+          <div class="column col-sm-6 mt-1">
+            <img src="certs/data_visualization.png" style="width: 100%" />
+          </div>
+          <div class="column col-sm-6 mt-1">
+            <img src="certs/vuejs_certificate_kebele.jpg" style="width: 100%" />
+          </div>
+          <div class="column col-sm-6 mt-1">
+            <img src="certs/nuxtjs.jpg" style="width: 100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div>
+      <h2>about me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+        facilis. Magnam adipisci atque maiores ratione inventore hic
+        temporibus recusandae esse pariatur distinctio! Quas nesciunt
+        reprehenderit ipsam corporis similique nihil unde.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+        tempore sunt. Adipisci veniam nihil quas itaque debitis reiciendis,
+        eaque repellendus ea praesentium! Asperiores recusandae quis, ullam
+        voluptatibus tenetur autem ipsum dolorem eum beatae alias magnam
+        fugiat quos voluptate. Maxime vero, quos deserunt voluptate ut
+        mollitia nulla nihil. Non, delectus recusandae.
+      </p>
+      <a href="#">read more...</a>
+    </div>
+  </section>
+  <div class="social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <scrip src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- lightbox JS -->
+  <scrip src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></scrip>
+  
+      
+  
+
+  <!-- Custom scripts for this template -->
+  <script>
+     AOS.init();
+    function toggle() {
+      let header = document.getElementById("header");
+      header.classList.toggle("active");
+    }
+    function toggle() {
+      let header = document.getElementById("header");
+      header.classList.toggle("active");
+    }
+  </script>
+   
+  
+  <!-- <script src="certificates.js"></script> -->
+  <script src="projects.js"></script>
+  <script src="isotope.js"></script>
+</body>
+
+</html>
