@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: "fab fa-js",
       color: "#f0db4f",
       background : "secondary",
-      flip : "fade-down-left"
+      flip : "flip-up"
     },
     {
       tech: "react",
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: "fab fa-js",
       color: "#f0db4f",
       background : "secondary",
-      flip : "zoom-in-left"
+      flip : "flip-up"
     },
     {
       tech: "js",
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: "fab fa-js",
       color: "#f0db4f",
       background : "secondary",
-      flip : "zoom-in-up"
+      flip : "flip-up"
     },
     {
       tech: "react",
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (x of projects) {
     proje.innerHTML += `
-    <div class="element-item ${x.tech} mx-auto col-md-4 col-sm-6 col-xs-6 m-1"  data-aos="${x.flip}" data-aos-duration="1000" data-aos-delay="1000">
+    <div class="element-item ${x.tech} mx-auto col-md-4 col-sm-6 col-xs-6 m-1">
     <div class="column card text-center text-dark ">
       <div class="card-header" style="background : ${x.color}">${x.name}</div>
         <div class="card-body">
