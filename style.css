@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 *{
     margin: 0;padding: 0;   
-    font-family: 'Grandstander', cursive;
+    font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -53,6 +53,15 @@ header ul li a:active{
     letter-spacing: 1px;
     text-decoration: none;
 }
+
+#home p{
+    font-size: 2rem;
+}
+#home h1{
+    font-size: 4rem;
+    /* text-decoration: underline; */
+    font-weight: bold;
+}
 .toggle{
     display: none;
 }
@@ -68,7 +77,6 @@ section{
         margin: 50px 0 30px;
         max-width: 100%;    
 } */
-
 
 section h2{
     font-size: 2.5em;
@@ -195,8 +203,8 @@ section:nth-child(even){
         height: 2px;
         background: mintcream;
         z-index: 1;
-        /* box-shadow: 0 10px 0 mintcream; */
-        box-shadow: 0 10px 0 crimson;
+        box-shadow: 0 10px 0 rgb(75, 121, 207);
+        /* box-shadow: 0 10px 0 crimson; */
         transition: 0.5s;
     }
     .toggle:after{
@@ -205,7 +213,8 @@ section:nth-child(even){
         bottom: 4px;
         width: 100%;
         height: 2px;
-        background: rgb(10, 69, 180);
+        /* background: rgb(10, 69, 180); */
+        background: crimson;
         z-index: 1;
         /* box-shadow: 0 10px 0 mintcream; */
         transition: 0.5s;
