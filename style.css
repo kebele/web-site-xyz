@@ -149,6 +149,18 @@ section:nth-child(even){
     color:#2B2B2B;
    
 } */
+table {  
+  border-collapse: collapse;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+td, tr {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
 
 
 

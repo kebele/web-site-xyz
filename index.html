@@ -10,17 +10,22 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <!-- isotope js -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  
   <!-- animation on scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
   <!-- custom css -->
+  <link type="" rel="stylesheet" href=timeline.css">
   <link rel="stylesheet" href="style.css" />
+  
   <title>ke be le</title>
 </head>
 
 <body>
   <header id="header">
-    <a href="#" class="logo"><span>ke</span><span style="color:rgb(75, 121, 207)">be</span><span style="color: crimson;">le</span></a>
+    <a href="#" class="logo"><span>ke</span><span style="color:rgb(75, 121, 207)">be</span><span
+        style="color: crimson;">le</span></a>
     <ul>
       <li><a href="#home" class="active" onclick="toggle()">home</a></li>
       <li><a href="#portfolio" onclick="toggle()">portfolio</a></li>
@@ -34,10 +39,10 @@
       <div class="row">
         <div class="text-center mx-auto my-auto">
           <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2900">
-          < c o d e r />
-        </h1>
-        <br>
-        <!-- <p data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="500">
+            < c o d e r />
+          </h1>
+          <br>
+          <!-- <p data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="500">
           html + css + js
         </p>
         <p data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="700">
@@ -46,23 +51,27 @@
         <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1200">
           node + mongo
         </p> -->
-        <div class="row d-flex justify-content-around mb-3">
-          <h2 data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="500"><i class="fab fa-html5"></i></h2>
-          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><i class="fab fa-css3"></i></h2>
-          <h2 data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="900"><i class="fab fa-js"></i></h2>
+          <div class="row d-flex justify-content-around mb-3">
+            <h2 data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="500"><i class="fab fa-html5"></i></h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><i class="fab fa-css3"></i></h2>
+            <h2 data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="900"><i class="fab fa-js"></i></h2>
+          </div>
+          <div class="row d-flex justify-content-around mb-3">
+            <h2 data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fab fa-react"></i>
+            </h2>
+            <h2 data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="1500"><i
+                class="fas fa-code-branch"></i></h2>
+            <h2 data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="1800"><i class="fab fa-vuejs"></i>
+            </h2>
+          </div>
+          <div class="row d-flex justify-content-around">
+            <h2 class="mr-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="2100"><i
+                class="fab fa-node-js"></i></h2>
+            <h2 data-aos="flip-down" data-aos-duration="1000" data-aos-delay="2300"><i class="fas fa-database"></i></h2>
+          </div>
+
         </div>
-        <div class="row d-flex justify-content-around mb-3">
-          <h2 data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="1200"><i class="fab fa-react"></i></h2>
-          <h2 data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="1500"><i class="fas fa-code-branch"></i></h2>
-          <h2 data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="1800"><i class="fab fa-vuejs"></i></h2>          
-        </div>
-        <div class="row d-flex justify-content-around">
-          <h2 class="mr-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="2100"><i class="fab fa-node-js"></i></h2>          
-          <h2 data-aos="flip-down" data-aos-duration="1000" data-aos-delay="2300"><i class="fas fa-database"></i></h2>          
-        </div>
-        
-        </div>
-        
+
       </div>
     </div>
   </section>
@@ -76,43 +85,41 @@
               portfolio
             </h2>
           </div>
-          <div id="filters" class="button-group text-center mb-3 col-md-12" data-aos="fade-up-right" data-aos-duration="1000"
-            data-aos-delay="700">
-            <button class="button btn btn-danger mr-2" data-filter=".html">
+          <div id="filters" class="button-group text-center mb-3 col-md-12">
+            <button class="button btn btn-danger mr-2" data-aos="fade-up-right"
+            data-aos-duration="1000" data-aos-delay="700" data-filter=".html">
               html/css
             </button>
-            <button class="button btn btn-secondary" data-filter=".js">
+            <button class="button btn btn-secondary" data-aos="zoom-in-down"
+            data-aos-duration="1000" data-aos-delay="700" data-filter=".js">
               javascript
             </button>
-            <button class="button btn btn-info m-2" data-filter=".vue">
+            <button class="button btn btn-info m-2" data-aos="zoom-out-up"
+            data-aos-duration="1000" data-aos-delay="700" data-filter=".vue">
               vue
             </button>
-            <button class="button btn btn-primary mr-2" data-filter=".react">
+            <button class="button btn btn-primary mr-2" data-aos="zoom-in-left"
+            data-aos-duration="1000" data-aos-delay="700" data-filter=".react">
               react
             </button>
-            <button class="button btn btn-warning mr-2" data-filter=".d3">
+            <button class="button btn btn-warning mr-2" data-aos="zoom-out-right"
+            data-aos-duration="1000" data-aos-delay="700" data-filter=".d3">
               d3
             </button>
-            <button class="button btn btn-success is-checked mr-2" data-filter="*">
+            <button class="button btn btn-success is-checked mr-2" data-aos="flip-up"
+            data-aos-duration="1000" data-aos-delay="700" data-filter="*">
               show all
             </button>
           </div>
         </div>
       </div>
-<div class="grid2" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="grid2" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="1000">
 
 
-<div class="row proje"></div>
-
-</div>
-        
-
-          
-        
-
-
+        <div class="row proje"></div>
 
       </div>
+    </div>
 
 
     </div>
@@ -133,25 +140,25 @@
         <!-- <div class="certificate row"></div> -->
 
         <div class="row">
-          <div class="column col-sm-6">
+          <div class="column col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
             <img src="certs/responsive_web_design.png" style="width: 100%" />
           </div>
-          <div class="column col-sm-6">
+          <div class="column col-sm-6" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
             <img src="certs/javascript_algorithms_n_data_structures.png" style="width: 100%" />
           </div>
-          <div class="column col-sm-6 mt-1">
+          <div class="column col-sm-6 mt-1" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000">
             <img src="certs/front_end_libraries.png" style="width: 100%" />
           </div>
-          <div class="column col-sm-6 mt-1">
+          <div class="column col-sm-6 mt-1" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="1000">
             <img src="certs/20_web_projects_kebele.jpg" style="width: 100%" />
           </div>
-          <div class="column col-sm-6 mt-1">
+          <div class="column col-sm-6 mt-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
             <img src="certs/data_visualization.png" style="width: 100%" />
           </div>
-          <div class="column col-sm-6 mt-1">
+          <div class="column col-sm-6 mt-1" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1000">
             <img src="certs/vuejs_certificate_kebele.jpg" style="width: 100%" />
           </div>
-          <div class="column col-sm-6 mt-1">
+          <div class="column col-sm-6 mt-1" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
             <img src="certs/nuxtjs.jpg" style="width: 100%" />
           </div>
         </div>
@@ -159,25 +166,42 @@
     </div>
   </section>
 
-  <section id="about">
-    <div>
-      <h2>about me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-        facilis. Magnam adipisci atque maiores ratione inventore hic
-        temporibus recusandae esse pariatur distinctio! Quas nesciunt
-        reprehenderit ipsam corporis similique nihil unde.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-        tempore sunt. Adipisci veniam nihil quas itaque debitis reiciendis,
-        eaque repellendus ea praesentium! Asperiores recusandae quis, ullam
-        voluptatibus tenetur autem ipsum dolorem eum beatae alias magnam
-        fugiat quos voluptate. Maxime vero, quos deserunt voluptate ut
-        mollitia nulla nihil. Non, delectus recusandae.
-      </p>
-      <a href="#">read more...</a>
-    </div>
+  <section id="about" class="about">
+   <div class="container">
+<div class="row">
+  
+  
+<table class="mt-5">
+  <tr>
+    <td style="color:tomato">1977</td>
+    <td style="color: #f1c40f;">born</td>
+    <td style="color : #0abde3">hello world</td>
+    
+  </tr>
+  <tr>
+    <td style="color:tomato">1994 1999</td>
+    <td style="color: #f1c40f;">graduate</td>
+    <td style="color : #0abde3">economics <br>faculty of economics & administrative sciences <br>
+      Karadeniz Technical University</span></td>    
+  </tr>
+  <tr>
+    <td style="color:tomato">2000 2016</td>
+    <td style="color: #f1c40f;">government, civil servant</td><td style="color : #0abde3">Presidency of Defence Industries <br>
+      Presidency of the Republic of Turkey</td>
+  </tr>
+  <tr>
+    <td style="color:tomato">2015 +</td>
+    <td style="color: #f1c40f;">coding with passion</td>
+    <td style="color : #0abde3">will soon finish to code the new instagram  <br> 😇 </td>
+  </tr>
+</table>
+
+ 
+  
+  
+</div>
+</div>
+    
   </section>
   <div class="social">
     <a href="https://codepen.io/ykemal/" target="_blank"><i class="fab fa-codepen"></i></a>
@@ -193,33 +217,37 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <scrip src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <!-- lightbox JS -->
-  <scrip src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></scrip>
-  
-      
-  
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+    <!-- lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    
+    
 
-  <!-- Custom scripts for this template -->
-  <script>
-     AOS.init();
-    function toggle() {
-      let header = document.getElementById("header");
-      header.classList.toggle("active");
-    }
-    function toggle() {
-      let header = document.getElementById("header");
-      header.classList.toggle("active");
-    }
-  </script>
-   
-  
-  <!-- <script src="certificates.js"></script> -->
-  <script src="projects.js"></script>
-  <script src="isotope.js"></script>
+
+
+    <!-- Custom scripts for this template -->
+    <script>
+      AOS.init();
+      function toggle() {
+        let header = document.getElementById("header");
+        header.classList.toggle("active");
+      }
+      function toggle() {
+        let header = document.getElementById("header");
+        header.classList.toggle("active");
+      }
+
+    </script>
+
+
+    <!-- <script src="certificates.js"></script> -->
+    <script src="projects.js"></script>
+    <script src="isotope.js"></script>
+    <!-- <script src="about.js"></script> -->
 </body>
 
 </html>

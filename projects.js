@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://vuehava.netlify.app/",
       icon: "fab fa-vuejs",
       color: "#41B883",
-      background : "info"
+      background : "info",
+      flip : "flip-left"
     },
     {
       tech: "html",
@@ -18,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://sliderx.kebele.vercel.app/",
       icon: "fab fa-css3",
       color: "#df4759",
-      background : "danger"
+      background : "danger",
+      flip : "flip-down"
     },
     {
       tech: "vue",
@@ -27,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://vueceviri.netlify.app/",
       icon: "fab fa-vuejs",
       color: "#41B883",
-      background : "info"
+      background : "info",
+      flip : "flip-right"
     },
     {
       tech: "react",
@@ -36,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://markdown-react.vercel.app/",
       icon: "fab fa-react",
       color: "#61DBFB",
-      background : "primary"
+      background : "primary",
+      flip : "flip-left"
     },
     {
       tech: "js",
@@ -45,7 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://kebelemealfinder.netlify.app/",
       icon: "fab fa-js",
       color: "#f0db4f",
-      background : "secondary"
+      background : "secondary",
+      flip : "flip-up"
     },
     {
       tech: "vue",
@@ -54,7 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://vuecanavar.netlify.app/",
       icon: "fab fa-vuejs",
       color: "#41B883",
-      background : "info"
+      background : "info",
+      flip : "zoom-in"
     },   
     {
       tech: "react",
@@ -63,7 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://drum-machinex.vercel.app/",
       icon: "fab fa-react",
       color: "#61DBFB",
-      background : "primary"
+      background : "primary",
+      flip : "fade-left"
     },    
     {
       tech: "js",
@@ -72,7 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://kebeletodo.netlify.app/",
       icon: "fab fa-js",
       color: "#f0db4f",
-      background : "secondary"
+      background : "secondary",
+      flip : "flip-up"
     },
     {
       tech: "react",
@@ -81,7 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://random-quote-ivory.vercel.app/",
       icon: "fab fa-react",
       color: "#61DBFB",
-      background : "primary"
+      background : "primary",
+      flip : "fade-up-right"
     },
     {
       tech: "html",
@@ -90,7 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://kursun.netlify.app/",
       icon: "fab fa-css3",
       color: "#df4759",
-      background : "danger"
+      background : "danger",
+      flip : "fade-down-right"
     },
     {
       tech: "js",
@@ -99,7 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://paintykebele.netlify.app/",
       icon: "fab fa-js",
       color: "#f0db4f",
-      background : "secondary"
+      background : "secondary",
+      flip : "flip-up"
     },
     {
       tech: "js",
@@ -108,7 +119,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://kebelesnake.netlify.app/",
       icon: "fab fa-js",
       color: "#f0db4f",
-      background : "secondary"
+      background : "secondary",
+      flip : "fade-down-left"
     },
     {
       tech: "react",
@@ -117,7 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://calc-react-three.vercel.app/",
       icon: "fab fa-react",
       color: "#61DBFB",
-      background : "primary"
+      background : "primary",
+      flip : "flip-down"
     },
     {
       tech: "js",
@@ -126,7 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://kebelebreakout.netlify.app/",
       icon: "fab fa-js",
       color: "#f0db4f",
-      background : "secondary"
+      background : "secondary",
+      flip : "zoom-in-left"
     },
     {
       tech: "js",
@@ -135,7 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://kebelekoltuksecimi.netlify.app/",
       icon: "fab fa-js",
       color: "#f0db4f",
-      background : "secondary"
+      background : "secondary",
+      flip : "zoom-in-up"
     },
     {
       tech: "react",
@@ -144,7 +159,8 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://pomodoro-dun.vercel.app/",
       icon: "fab fa-react",
       color: "#61DBFB",
-      background : "primary"
+      background : "primary",
+      flip : "flip-up"
     },
     {
       tech: "d3",
@@ -153,14 +169,15 @@ document.addEventListener("DOMContentLoaded", () => {
       linkx: "https://doping-in-bicycle-sport.vercel.app/",
       icon: "fas fa-plus",
       color: "#ffc107",
-      background : "warning"
+      background : "warning",
+      flip : "zoom-in-down"
     },
     
   ];
 
   for (x of projects) {
     proje.innerHTML += `
-    <div class="element-item ${x.tech} mx-auto col-md-4 col-sm-6 col-xs-6 m-1">
+    <div class="element-item ${x.tech} mx-auto col-md-4 col-sm-6 col-xs-6 m-1"  data-aos="${x.flip}" data-aos-duration="1000" data-aos-delay="1000">
     <div class="column card text-center text-dark ">
       <div class="card-header" style="background : ${x.color}">${x.name}</div>
         <div class="card-body">
