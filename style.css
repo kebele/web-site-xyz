@@ -56,6 +56,13 @@ header ul li a:active{
     letter-spacing: 1px;
     text-decoration: none;
 }
+/* .kml{
+    background: rgba(0, 0, 0, 0.3);
+border-radius: 21%;
+box-shadow: inset 11.71px 11.71px 25px #E8EAEE, inset -11.71px -11.71px 25px #F4F6FA;
+
+} */
+
 .home{
     position: relative;
     top: 0;
@@ -71,15 +78,21 @@ header ul li a:active{
 
 .portfolio{
     /* position: relative;
-    top: 0;
+    top: 0;*/
     width: 100%;
-    height: 100vh; */
-    color: whitesmoke;
+    /* height: 100vh; */
+    /* color: whitesmoke; */
     background: url(images/pexels-stein-egil-liland-1933317.jpg) no-repeat center center fixed;
     background-size: cover;
     margin-bottom: 0;
     overflow: hidden;
     /* margin-bottom: 0; */
+    margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
 }
 
 .certificates{
@@ -130,11 +143,11 @@ section p{
 }
 section a{
     display: inline-block;
-    padding: 8px 10px;
+    /* padding: 8px 10px; */
     text-decoration: none;
-    background: #111;
-    margin-top: 20px;
-    color: mintcream;
+    /* background: #111; */
+    /* margin-top: 20px; */
+    /* color: mintcream; */
     border-radius: 5px;
 }
 /* section:nth-child(odd){
@@ -212,8 +225,9 @@ td, tr {
 
 
 
-@media (max-width: 992px){
-    section{        
+
+@media (max-width: 880px){
+    /* section{        
         padding: 100px 50px 50px;
         display: flex;
         flex-direction: column;
@@ -223,7 +237,7 @@ td, tr {
     section img{
         margin: 50px 0 0;
         max-width : 100%;
-    }
+    } */
     header ul{
         position: absolute;
         top : -100%;
@@ -239,6 +253,9 @@ td, tr {
         opacity: 0;
         transform: translateY(-100%);
     }
+    /* .card{
+        width: 10rem;
+    } */
     header.active ul{
         opacity: 1;
         top: 60px;
@@ -289,4 +306,5 @@ td, tr {
         transform: rotate(-45deg);
         box-shadow: 0 0 0 mintcream;
     }
+    
 }

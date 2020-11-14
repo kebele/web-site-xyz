@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const proje = document.querySelector(".proje");
+  const dugme = document.querySelector(".dugme");
 
   let projects = [
     {
@@ -84,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       tech: "react",
-      name: "random quote machine",
+      name: "random quote",
       code: "https://github.com/kebele/machine-for-random-quote",
       linkx: "https://random-quote-ivory.vercel.app/",
       icon: "fab fa-react",
@@ -177,19 +178,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (x of projects) {
     proje.innerHTML += `
-    <div class="element-item ${x.tech} mx-auto col-md-4 col-sm-6 col-xs-6 m-1">
-    <div class="column card text-center text-dark ">
-      <div class="card-header" style="background : ${x.color}">${x.name}</div>
-        <div class="card-body">
-          <div class="mb-2"><span style="color:${x.color}"><i class="${x.icon} fa-4x"></i></span></div>
-    <a class="btn btn-outline-info" href=${x.linkx} target="_blank"><i class="fas fa-external-link-alt"></i> see</a>
-    <a class="btn btn-outline-success" href=${x.code} target="_blank"><i class="fab fa-github-alt"></i> code</a>
-    </div>      
+    
+    <div class="row">
+      <div class="element-item ${x.tech}">          
+      <div class="card m-1" style="width:13rem">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <span style="color:${x.color}"><i class="${x.icon} fa-2x"></i></span>
+          <span class="float-right"><a href="${x.code} target="_blank"><i class="fas fa-code"></i></a></span>
+        </li>
+        <li class="list-group-item">
+          <span style="font-size:1.1rem;"><a href="${x.linkx} target="_blank">${x.name}</a></span>
+        </li>
+      </ul>
     </div>
-    </div>
-  </div>`;
+        </div>            
+      </div>  
+  `;
   }
   //   <img class="img-fluid" src="${x.img}"/>
+
 
   var $grid2 = $(".grid2").isotope({
     itemSelector: ".element-item",
