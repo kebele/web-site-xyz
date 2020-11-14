@@ -180,8 +180,8 @@ document.addEventListener("DOMContentLoaded", () => {
     proje.innerHTML += `
     
     <div class="row">
-      <div class="element-item ${x.tech}">          
-      <div class="card m-1" style="width:13rem">
+      <div class="element-item ${x.tech} col-md-3 col-sm-6">          
+      <div class="card m-1">
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
           <span style="color:${x.color}"><i class="${x.icon} fa-2x"></i></span>
