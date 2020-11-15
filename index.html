@@ -2,364 +2,333 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fontawesome -->
+    <title>kebele</title>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script
       src="https://kit.fontawesome.com/c9da5a481d.js"
       crossorigin="anonymous"
     ></script>
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <!-- isotope js -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- animation on scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
-    <!-- custom css -->
     
     <link rel="stylesheet" href="style.css" />
-
-    <title>ke be le</title>
   </head>
 
   <body>
-    <header id="header">
-      <a href="#" class="logo"
-        ><span style="color:mintcream">ke</span><span style="color: rgb(75, 121, 207)">be</span
-        ><span style="color: crimson">le</span></a
-      >
-      <ul>
-        <li><a href="#home" class="active" onclick="toggle()">home</a></li>
-        <li><a href="#portfolio" onclick="toggle()">portfolio</a></li>
-        <li><a href="#certificates" onclick="toggle()">certificates</a></li>
-        <li><a href="#about" onclick="toggle()">about</a></li>
+      <!-- 
+          thanks to online tutorials
+          https://www.youtube.com/watch?v=ac5nmWOkBEY
+       -->
+    <header>
+      <a href="#" class="logo">ke<span>bele</span></a>
+      <div class="menuToggle" onclick="toggleMenu()">
+
+      </div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu()">home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">about</a></li>
+        <li><a href="#menu" onclick="toggleMenu()">certificates</a></li>
+        <li><a href="#expert" onclick="toggleMenu()">portfolio</a></li>
+        <!-- <li><a href="#testimonials" onclick="toggleMenu()">testimonials</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li> -->
       </ul>
-      <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section id="home" class="home">
-      <div class="container">
-        <div class="row">
-          <div class="text-center mb-3 mx-auto my-auto kml">
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="2900"
-            >
-              < coder />
-            </h1>
-            <br />
-            <!-- <p data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="500">
-          html + css + js
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>< coder /></h2>
+        <p>
+          htmlCssJavascript VueJsReactJs MongoDbNodeJsExpressJs
         </p>
-        <p data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="700">
-          react/next + vue/nuxt
-        </p>
-        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1200">
-          node + mongo
+        <!-- <a href="#" class="btn">our menu</a> -->
+      </div>
+    </section>
+
+<!-- certificates -->
+    <section class="menu" id="menu">
+      <div class="title">
+        <h2 class="titleText"><span>c</span>ertificates</h2>
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
+          cumque.
         </p> -->
-            <div class="row d-flex justify-content-around mb-3">
-              <h2
-                data-aos="fade-up-right"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-              >
-                <i class="fab fa-html5"></i>
-              </h2>
-              <h2
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-              >
-                <i class="fab fa-css3"></i>
-              </h2>
-              <h2
-                data-aos="fade-up-left"
-                data-aos-duration="1000"
-                data-aos-delay="900"
-              >
-                <i class="fab fa-js"></i>
-              </h2>
-            </div>
-            <div class="row d-flex justify-content-around mb-3">
-              <h2
-                data-aos="fade-down-right"
-                data-aos-duration="1000"
-                data-aos-delay="1200"
-              >
-                <i class="fab fa-react"></i>
-              </h2>
-              <h2
-                data-aos="fade-down-right"
-                data-aos-duration="1000"
-                data-aos-delay="1500"
-              >
-                <i class="fas fa-code-branch"></i>
-              </h2>
-              <h2
-                data-aos="fade-down-left"
-                data-aos-duration="1000"
-                data-aos-delay="1800"
-              >
-                <i class="fab fa-vuejs"></i>
-              </h2>
-            </div>
-            <div class="row d-flex justify-content-around">
-              <h2
-                class="mr-1"
-                data-aos="flip-up"
-                data-aos-duration="1000"
-                data-aos-delay="2100"
-              >
-                <i class="fab fa-node-js"></i>
-              </h2>
-              <h2
-                data-aos="flip-down"
-                data-aos-duration="1000"
-                data-aos-delay="2300"
-              >
-                <i class="fas fa-database"></i>
-              </h2>
-            </div>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/20_web_projects_kebele.jpg" alt="" />
+          </div>
+          <div class="text">
+            <!-- <h3>special salads</h3> -->
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/20_web_projects_kebele.jpg" alt="" />
+          </div>
+          <div class="text">
+            <!-- <h3>special soup</h3> -->
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/fcc_frontend_certificate.png" alt="" />
+          </div>
+          <div class="text">
+            <!-- <h3>special pasta</h3> -->
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/20_web_projects_kebele.jpg" alt="" />
+          </div>
+          <div class="text">
+            <!-- <h3>special salad</h3> -->
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/20_web_projects_kebele.jpg" alt="" />
+          </div>
+          <div class="text">
+            <!-- <h3>special soup</h3> -->
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/20_web_projects_kebele.jpg" alt="" />
+          </div>
+          <div class="text">
+            <!-- <h3>special pasta</h3> -->
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/20_web_projects_kebele.jpg" alt="" />
+          </div>
+          <div class="text">
+            <!-- <h3>special pasta</h3> -->
           </div>
         </div>
       </div>
+      <!-- <div class="title">
+        <a href="#" class="btn">view all</a>
+      </div> -->
     </section>
 
-    <section id="portfolio" class="portfolio">
-      <div class="container">
+    <section class="expert" id="expert">
+      <div class="title">
+        <!-- <h2 class="titleText">Our <span>k</span>itchen <span>e</span>xpert</h2> -->
+        <h2 class="titleText">portfolio</h2>
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
+          cumque.
+        </p> -->
+        <div id="filters">
+        <button class="btn" data-filter=".html">html/css</button>
+        <button class="btn" data-filter=".js">javascript</button>
+        <button class="btn" data-filter=".vue">vue</button>
+        <button class="btn" data-filter=".react">react</button>
+        <button class="btn" data-filter="*">all</button>
+      </div>
+        
+      <!-- </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/expert1.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>someone famous</h3>
+          </div>
+        </div>
+       <div class="box">
+          <div class="imgBx">
+            <img src="images/expert2.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>someone famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/expert3.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>someone famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/expert4.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>someone famous</h3>
+          </div>
+        </div>  -->
+
         
 
-        <div class="row">
-          <div class="offset-sm-2 col-sm-8">
-            <div class="headerText text-center">
-              <h2
-                data-aos="zoom-in-up"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-              >
-                
-              </h2>
-            </div>
-            <div id="filters" class="button-group text-center mb-3 col-md-12">
-              <div class="dugme"></div>
-              <button
-                class="button btn btn-danger btn-lg mr-2"
-                data-aos="fade-up-right"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-                data-filter=".html"
-              >
-              <i class="fab fa-css3 fa-2x"></i>
-              </button>
-              <button
-                class="button btn btn-warning btn-lg"
-                data-aos="zoom-in-down"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-                data-filter=".js"
-              >
-              <i class="fab fa-js fa-2x"></i>
-              </button>
-              <button
-                class="button btn btn-info btn-lg m-2"
-                data-aos="zoom-out-up"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-                data-filter=".vue"
-              >
-              <i class="fab fa-vuejs fa-2x"></i>
-              </button>
-              <button
-                class="button btn btn-primary btn-lg mr-2"
-                data-aos="zoom-in-left"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-                data-filter=".react"
-              >
-              <i class="fab fa-react fa-2x"></i>
-              </button>
-              <button
-                class="button btn btn-warning btn-lg mr-2"
-                data-aos="zoom-out-right"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-                data-filter=".d3"
-              >
-              <i class="fas fa-plus fa-2x"></i>
-              </button>
-              <button
-                class="button btn btn-success btn-lg is-checked mr-2"
-                data-aos="flip-up"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-                data-filter="*"
-              >
-              <i class="fas fa-grip-horizontal fa-2x"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="grid2"
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-        >
-        <div class="row">
-        <div class="justify-content-center">
-          <div class="proje"></div>
-        </div>
-          </div>
         
-          
-        </div>
-      
       </div>
-
-
-
-    </section>
-    <section id="certificates" class="certificates">
-      <div class="container">
-        <div class="row">
-          <div class="offset-sm-2 col-sm-6">
-            <div class="headerText text-center">
-              <h2
-                data-aos="fade-down"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-              >
-                
-              </h2>
-            </div>
+      <div class="grid2 content">
+          <div class="proje">
+            
           </div>
         </div>
-        <div
-          class="certi"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-        >
-          <!-- <div class="certificate row"></div> -->
 
-          <div class="row">
-            <div
-              class="column col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <img src="certs/responsive_web_design.png" style="width: 100%;" />
-            </div>
-            <div
-              class="column col-sm-6"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <img
-                src="certs/javascript_algorithms_n_data_structures.png"
-                style="width: 100%"
-              />
-            </div>
-            <div
-              class="column col-sm-6 mt-1"
-              data-aos="zoom-in-up"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <img src="certs/front_end_libraries.png" style="width: 100%" />
-            </div>
-            <div
-              class="column col-sm-6 mt-1"
-              data-aos="fade-down-right"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <img src="certs/20_web_projects_kebele.jpg" style="width: 100%" />
-            </div>
-            <div
-              class="column col-sm-6 mt-1"
-              data-aos="flip-up"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <img src="certs/data_visualization.png" style="width: 100%" />
-            </div>
-            <div
-              class="column col-sm-6 mt-1"
-              data-aos="zoom-in-down"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <img
-                src="certs/vuejs_certificate_kebele.jpg"
-                style="width: 100%"
-              />
-            </div>
-            <div
-              class="column col-sm-6 mt-1"
-              data-aos="flip-up"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <img src="certs/nuxtjs.jpg" style="width: 100%" />
-            </div>
+    </section>
+    <!-- testimonials -->
+    <!-- <section class="testimonials" id="testimonials">
+      <div class="title white">
+        <h2 class="titleText">they <span>s</span>aid about us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
+          cumque.
+        </p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/testi1.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              unde incidunt laudantium qui at officia cumque. Culpa delectus ab
+              repudiandae pariatur corrupti repellendus dicta deleniti, vero,
+              optio voluptatum corporis odit quidem minus animi! Nemo debitis
+              quae repellendus voluptas tempore quisquam!
+            </p>
+            <h3>someone famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/testi2.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              unde incidunt laudantium qui at officia cumque. Culpa delectus ab
+              repudiandae pariatur corrupti repellendus dicta deleniti, vero,
+              optio voluptatum corporis odit quidem minus animi! Nemo debitis
+              quae repellendus voluptas tempore quisquam!
+            </p>
+            <h3>someone famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/testi3.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              unde incidunt laudantium qui at officia cumque. Culpa delectus ab
+              repudiandae pariatur corrupti repellendus dicta deleniti, vero,
+              optio voluptatum corporis odit quidem minus animi! Nemo debitis
+              quae repellendus voluptas tempore quisquam!
+            </p>
+            <h3>someone famous</h3>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row">
-          <table
-            class="mt-4"
-            data-aos="fade-up-left"
-            data-aos-duration="1000"
-            data-aos-delay="900"
-          >
-            <tr>
-              <td style="color: tomato">1977</td>
-              <td style="color: #f1c40f">born</td>
-              <td style="color: #0abde3">hello world</td>
-            </tr>
-            <tr>
-              <td style="color: tomato">1994 1999</td>
-              <td style="color: #f1c40f">graduate</td>
-              <td style="color: #0abde3">
-                economics <br />faculty of economics & administrative sciences
-                <br />Karadeniz Technical University
-              </td>
-            </tr>
-            <tr>
-              <td style="color: tomato">2000 2016</td>
-              <td style="color: #f1c40f">government, civil servant</td>
-              <td style="color: #0abde3">
-                Presidency of Defence Industries <br />
-                Presidency of the Republic of Turkey
-              </td>
-            </tr>
-            <tr>
-              <td style="color: tomato">2015 +</td>
-              <td style="color: #f1c40f">coding with persistence</td>
-              <td style="color: #0abde3">
-                will be get somewhere soon, I hope. <br />
-                😇
-              </td>
-            </tr>
-          </table>
+    </section> -->
+<!-- contact -->
+    <!-- <section class="contact" id="contact">
+      <div class="title">
+        <h2 class="titleText"><span>c</span>ontact</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
+          cumque.
+        </p>
+      </div>
+      <div class="contactForm">
+        <h3>send message</h3>
+        <div class="inputBox">
+          <input type="text" value="name" />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="email" />
+        </div>
+        <div class="inputBox">
+          <textarea placeholder="your message..."></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send" />
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- <div class="copyrightText">
+      <p>copyright 2020 | <a href="#">kebele</a><br />all rights reserved</p>
+    </div> -->
+<!-- about -->
+<section class="about" id="about">
+  <div class="row content">
+    <div class="col50">
+      <h2 class="titleText"><span>a</span>bout</h2>
+      <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit
+        eveniet, amet, repellat aspernatur dolorum totam mollitia fugit, ab
+        possimus ullam. Illo itaque, fuga facilis eligendi corporis soluta
+        culpa alias debitis nemo ipsum. Consequatur inventore reprehenderit
+        itaque nihil ut velit.<br /><br />Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Architecto distinctio doloribus et
+        voluptatem repellat tenetur totam dolore eligendi! Libero pariatur
+        esse quibusdam voluptatem, quisquam facilis qui error est vel quis
+        non amet neque iusto aut natus! Quae delectus ullam ex.
+      </p> -->
+      <div>
+      <table
+        class="mt-4"
+        style="margin-top:100px;"
+        data-aos="fade-up-left"
+        data-aos-duration="1000"
+        data-aos-delay="900"
+      >
+        <tr style="color:crimson; font-weight:bold; font-size:1.1rem">
+          <td stylex="color: tomato">1977</td>
+          <td stylex="color: #f1c40f">born</td>
+          <td stylex="color: #0abde3">hello world</td>
+        </tr>
+        
+        <tr style="color:purple; font-weight:bold; font-size:1.1rem">
+          <td stylex="color: tomato">1994 1999</td>
+          <td stylex="color: #f1c40f">graduate</td>
+          <td stylex="color: #0abde3">
+            economics <br />faculty of economics & administrative sciences
+            <br />Karadeniz Technical University
+          </td>
+        </tr>
+        
+        <tr style="color:green; font-weight:bold; font-size:1.1rem">
+          <td stylex="color: tomato">2000 2016</td>
+          <td stylex="color: #f1c40f">government, civil servant</td>
+          <td stylex="color: #0abde3">
+            Presidency of Defence Industries <br />
+            Presidency of the Republic of Turkey
+          </td>
+        </tr>
+        
+        
+        <tr style="color:orangered; font-weight:bold; font-size:1.1rem">
+          <td stylex="color: tomato">2015 +</td>
+          <td stylex="color: #f1c40f">coding with persistence</td>
+          <td stylex="color: #0abde3">
+            will be get somewhere soon, I hope. <br />
+            😇
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="col50">
+      <div class="imgBx">
+        <img src="images/pexels-pixabay-39396.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
     <div class="social">
       <a href="https://codepen.io/ykemal/" target="_blank"
         ><i class="fab fa-codepen"></i
@@ -375,43 +344,31 @@
       ></a>
     </div>
 
+
+
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
-    <!-- lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script>
-      AOS.init();
-      function toggle() {
-        let header = document.getElementById("header");
-        header.classList.toggle("active");
-      }
-      function toggle() {
-        let header = document.getElementById("header");
-        header.classList.toggle("active");
-      }
-    </script>
-
-    <!-- <script src="certificates.js"></script> -->
     <script src="projects.js"></script>
     <script src="isotope.js"></script>
-    <!-- <script src="about.js"></script> -->
+    <script>
+      window.addEventListener("scroll", function () {
+        // y ekseninde yukarıdan aşağıya scroll old. header a sticky class ı ekleyecek
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu(){
+          const menuToggle = document.querySelector('.menuToggle');
+          const navigation = document.querySelector('.navigation');
+          menuToggle.classList.toggle('active');
+          navigation.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
