@@ -303,7 +303,7 @@ a {
   background: #ecf0f1;
   /* color: #262524; */
   box-shadow: 4px 4px 9px 0px rgba(57, 53, 115, 0.51);  
-  transition: transform 0.4s;
+  /* transition: transform 0.4s; */
 }
 .element-item .name {
   position: absolute;
