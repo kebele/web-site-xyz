@@ -69,14 +69,17 @@ p{
     color: whitesmoke;
     background: #ff0157;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 10px;
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: 0.5s;
 }.btn:hover{
-    letter-spacing: 6px;
+    /* letter-spacing: 6px; */
+    color: black;
+    background: rgb(202, 193, 71);
+    font-weight: 700;
 }
 header{
     position: fixed;
@@ -299,7 +302,8 @@ a {
   border : 1px solid black;
   background: #ecf0f1;
   /* color: #262524; */
-  box-shadow: 4px 4px 9px 0px rgba(57, 53, 115, 0.51);
+  box-shadow: 4px 4px 9px 0px rgba(57, 53, 115, 0.51);  
+  transition: transform 0.4s;
 }
 .element-item .name {
   position: absolute;
@@ -380,6 +384,9 @@ a {
   visibility: visible;
 }
 
+.element-item:hover{
+    box-shadow: 7px 7px 10px 0px rgba(34, 31, 32, 0.623); 
+}
 
 
 
