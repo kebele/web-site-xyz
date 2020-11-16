@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     
+    
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -31,10 +32,12 @@
         <li><a href="#contact" onclick="toggleMenu()">contact</a></li> -->
       </ul>
     </header>
+    
     <section class="banner" id="banner">
       <div class="content">
         <h2>< coder /></h2>
-        <p>
+        <p data-aos-delay="1400"
+        data-aos-duration="1000" data-aos="flip-up">
           htmlCssJavascript VueJsReactJs MongoDbNodeJsExpressJs
         </p>
         <!-- <a href="#" class="btn">our menu</a> -->
@@ -42,11 +45,10 @@
     </section>
 
 
-
     <section class="expert" id="expert">
       <div class="title">
         <!-- <h2 class="titleText">Our <span>k</span>itchen <span>e</span>xpert</h2> -->
-        <h2 class="titleText">portfolio</h2>
+        <h2 class="titleText" style="margin-top: 50px; margin-bottom: 50px;">portfolio</h2>
         <!-- <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
           cumque.
@@ -271,7 +273,7 @@
 <section class="about" id="about">
   <div class="row content">
     <div class="col50">
-      <h2 class="titleText"><span>a</span>bout</h2>
+      <h2 class="titleText" style="margin-top:50px"><span>a</span>bout</h2>
       <!-- <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit
         eveniet, amet, repellat aspernatur dolorum totam mollitia fugit, ab
@@ -285,19 +287,18 @@
       </p> -->
       <div>
       <table
-        class="mt-4"
-        style="margin-top:100px;"
+        style="margin-top : 80px;"       
         data-aos="fade-up-left"
         data-aos-duration="1000"
         data-aos-delay="900"
       >
-        <tr style="color:crimson; font-weight:bold; font-size:1.1rem;">
+        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
           <td stylex="color: tomato">1977</td>
           <td stylex="color: #f1c40f">born</td>
-          <td stylex="color: #0abde3">hello world</td>
+          <td stylex="color: #0abde3">hello world<br></td>
         </tr>
         
-        <tr style="color:purple; font-weight:bold; font-size:1.1rem">
+        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
           <td stylex="color: tomato">1994 1999</td>
           <td stylex="color: #f1c40f">graduate</td>
           <td stylex="color: #0abde3">
@@ -306,17 +307,17 @@
           </td>
         </tr>
         
-        <tr style="color:green; font-weight:bold; font-size:1.1rem">
+        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
           <td stylex="color: tomato">2000 2016</td>
           <td stylex="color: #f1c40f">government, civil servant</td>
-          <td stylex="color: #0abde3">
+          <td stylex="color: #0abde3; height:60px">
             Presidency of Defence Industries <br />
             Presidency of the Republic of Turkey
           </td>
         </tr>
         
         
-        <tr style="color:orangered; font-weight:bold; font-size:1.1rem">
+        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
           <td stylex="color: tomato">2015 +</td>
           <td stylex="color: #f1c40f">coding with persistence</td>
           <td stylex="color: #0abde3">
@@ -351,7 +352,7 @@
     </div>
 
 
-
+  
     <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -360,9 +361,13 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
+    
+
     <script src="projects.js"></script>
     <script src="isotope.js"></script>
+       
     <script>
+      
       window.addEventListener("scroll", function () {
         // y ekseninde yukarıdan aşağıya scroll old. header a sticky class ı ekleyecek
         const header = document.querySelector("header");
