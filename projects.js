@@ -114,6 +114,17 @@ document.addEventListener("DOMContentLoaded", () => {
       inspire : "inspired"
     },
     {
+      tech: "D3",
+      name: "tree map",
+      code: "https://github.com/kebele/treemap_D3",
+      linkx: "https://treemap-d3.vercel.app/",
+      icon: "fas fa-plus",
+      color: "#e67e22",
+      background : "warning",
+      flip : "zoom-in-down",
+      inspire : "fcc project"
+    }, 
+    {
       tech: "js",
       name: "paint",
       code: "https://github.com/kebele/painty",
@@ -180,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
       inspire : "partially inspired"
     },
     {
-      tech: "d3",
+      tech: "D3",
       name: "doping in bicycle",
       code: "https://github.com/kebele/doping-in-bicycle-sport",
       linkx: "https://doping-in-bicycle-sport.vercel.app/",
@@ -466,6 +477,17 @@ document.addEventListener("DOMContentLoaded", () => {
       inspire : "inspired"
     },
     {
+      tech: "D3",
+      name: "choropleth map",
+      code: "https://github.com/kebele/choropleth_map",
+      linkx: "https://choropleth-map.vercel.app/",
+      icon: "fas fa-plus",
+      color: "#e67e22",
+      background : "warning",
+      flip : "zoom-in-down",
+      inspire : "fcc inspired"
+    }, 
+    {
       tech: "html",
       name: "clock",
       code: "https://github.com/kebele/clock",
@@ -529,7 +551,18 @@ document.addEventListener("DOMContentLoaded", () => {
       color: "#34495e",
       background : "warning",
       flip : "zoom-in-down",
-      inspire : "inspired"
+      inspire : "partially inspired"
+    },
+    {
+      tech: "D3",
+      name: "bar chart",
+      code: "https://github.com/kebele/d3_vis_data",
+      linkx: "https://d3-vis-data.vercel.app/",
+      icon: "fas fa-plus",
+      color: "#e67e22",
+      background : "warning",
+      flip : "zoom-in-down",
+      inspire : "fcc project"
     }, 
 
   ];
@@ -541,17 +574,15 @@ document.addEventListener("DOMContentLoaded", () => {
       <p class="name">${x.name}</p>
       <p class="symbol" style="color:${x.color}"><i class="${x.icon}"></i></p>
       <p class="weight"><a href="${x.code}" target="_blank">code</a></p>    
-      <p class="number"><a href="${x.linkx}" target="_blank">see</a></p>
+      <p class="number"><a href="${x.linkx}" target="_blank">go</a></p>
       <p class="info tooltip"><i class="fas fa-info"></i><span class="tooltiptext">${x.inspire}</span></p> 
-    </div>    
-  `
+    </div>`
   }
   //   <img class="img-fluid" src="${x.img}"/>
 
    var $grid2 = $(".grid2").isotope({
     itemSelector: ".element-item",
     layoutMode: "fitRows",
-    // layoutMode: "packery",
     getSortData: {},
   });
 
