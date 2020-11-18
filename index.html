@@ -23,19 +23,31 @@
   </head>
 
   <body>
-    <header>
-      <a href="#" class="logo">ke<span>bele</span></a>
-      <div class="menuToggle" onclick="toggleMenu()">
-
-      </div>
+    <header id="header">
+      <!-- <a href="#" class="logo">ke<span>bele</span></a> -->
+      <a href="#" class="logo"
+        ><span class="ke">ke</span><span class="be">be</span
+        ><span class="le">le</span></a
+      >
+      <!-- <div class="menuToggle" onclick="toggleMenu()"> </div>     
       <ul class="navigation">
         <li><a href="#banner" onclick="toggleMenu()">home</a></li>
         <li><a href="#expert" onclick="toggleMenu()">portfolio</a></li>
         <li><a href="#menu" onclick="toggleMenu()">certificates</a></li>
         <li><a href="#about" onclick="toggleMenu()">about</a></li>
-        <!-- <li><a href="#testimonials" onclick="toggleMenu()">testimonials</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">contact</a></li> -->
+        <li><a href="#testimonials" onclick="toggleMenu()">testimonials</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li> 
       </ul>
+    -->
+    <ul>
+      <li><a href="#banner" class="active" onclick="toggle()">home</a></li>
+      <li><a href="#expert" onclick="toggle()">portfolio</a></li>
+      <li><a href="#menu" onclick="toggle()">certificates</a></li>
+      <li><a href="#about" onclick="toggle()">about</a></li>
+      <!-- <li><a href="#team" onclick="toggle()">team</a></li>
+      <li><a href="#contact" onclick="toggle()">contact</a></li> -->
+    </ul>
+    <div class="toggle" onclick="toggle()"></div> 
     </header>
     
     <section class="banner" id="banner">
@@ -63,7 +75,7 @@
         <button class="btn" data-filter=".vue">vue</button>
         <button class="btn" data-filter=".react">react</button>
         <button class="btn" data-filter=".d3">d3</button>
-        <button class="btn" data-filter="*">all</button>
+        <button class="btn activex" data-filter="*">all</button>
         
       </div>
         
@@ -278,15 +290,20 @@
       window.addEventListener("scroll", function () {
         // y ekseninde yukarıdan aşağıya scroll old. header a sticky class ı ekleyecek
         const header = document.querySelector("header");
+        const ke = document.querySelector(".ke");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
 
-      function toggleMenu(){
-          const menuToggle = document.querySelector('.menuToggle');
-          const navigation = document.querySelector('.navigation');
-          menuToggle.classList.toggle('active');
-          navigation.classList.toggle('active');
-      }
+      // function toggleMenu(){
+      //     const menuToggle = document.querySelector('.menuToggle');
+      //     const navigation = document.querySelector('.navigation');
+      //     menuToggle.classList.toggle('active');
+      //     navigation.classList.toggle('active');
+      // }
+      function toggle(){
+            let headerx = document.getElementById("header");            
+            headerx.classList.toggle('active');
+        }
     </script>
   </body>
 </html>

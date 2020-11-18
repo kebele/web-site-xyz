@@ -2,6 +2,7 @@
 
 *{
     margin: 0;padding: 0;box-sizing: border-box;
+    font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
 }
@@ -82,9 +83,12 @@ p{
     transition: 0.5s;
 }.btn:hover{
     /* letter-spacing: 6px; */
-    color: black;
-    background: rgb(202, 193, 71);
-    font-weight: 700;
+    /* color: black; */
+    color: whitesmoke;
+    /* background: rgb(202, 193, 71); */
+    background: black;
+    /* border : 2px solid black; */
+    font-weight: 700;    
 }
 header{
     position: fixed;
@@ -98,9 +102,23 @@ header{
     transition: 0.5s;
 }
 header.sticky{
-    background: whitesmoke;
+    /* background: rgb(20, 20, 20);     */
+    background: rgba(0, 0, 0,0.8);    
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    color : black
+}
+.ke{
+    color : whitesmoke;
+}
+.keBlack{
+    color : black
+}
+.be{
+    color: rgb(75, 121, 207)
+}
+.le{
+    color : crimson;
 }
 header .logo{
     color: whitesmoke;
@@ -109,10 +127,10 @@ header .logo{
     text-decoration: none;
 }
 header.sticky .logo{
-    color : black
+    color : black;
 }
 header .logo span{
-    color: crimson;
+    /* color: crimson; */
     font-size: 1.1em;
     font-weight: 700;
 }
@@ -466,7 +484,8 @@ a {
     background: linear-gradient(90deg, #2980b9 0%, #091f79 48%, rgba(0,212,255,1) 100%); */
     min-height: 100vh;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
 }
 
 .timeline:before{
@@ -548,6 +567,67 @@ a {
 .timeline .entries .entry:nth-child(2n) .titleA.big:before{
     transform: translate(-8px, -50%);
 }
+
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(0, 0, 0,0.7); */
+    z-index: 500;    
+}
+header .logo{
+    color: mintcream;
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    padding: 5px 10px;
+    color: mintcream;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+header ul li a:hover,
+header ul li a:active{
+    /* background-color: orange; */
+    /* color: black; */
+    background: transparent;
+    color: whitesmoke;
+    border : 1px solid crimson;
+    font-weight: 700;
+    transform: scale(1.05);
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.toggle{
+    display: none;
+}
+
+.activex{
+    background-color: black;
+    font-weight: 700;
+}
+
+
 
 @media (max-width: 991px){
     header,
@@ -652,6 +732,74 @@ a {
     max-width: 500px;
     margin-bottom: 30px;
 }
+
+header ul{
+    position: absolute;
+    top : -100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 50px 100px;
+    text-align: center;
+    overflow: auto;
+    transition: 0.5s;
+    background: black;
+    background: rgba(0, 0, 0,0.8);
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+header.active ul{
+    opacity: 1;
+    top: 80px;
+    transform: translateY(0);
+}
+header ul li a{
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+.toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle:before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: mintcream;
+        z-index: 1;
+        box-shadow: 0 10px 0 rgb(75, 121, 207);
+        /* box-shadow: 0 10px 0 crimson; */
+        transition: 0.5s;
+    }
+    .toggle:after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        /* background: rgb(10, 69, 180); */
+        background: crimson;
+        z-index: 1;
+        /* box-shadow: 0 10px 0 mintcream; */
+        transition: 0.5s;
+    }
+    header.active .toggle:before{
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 mintcream;
+    }
+    header.active .toggle:after{
+        bottom: 18px;
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0 mintcream;
+    }
+    
 }
 
 @media (max-width: 480px){

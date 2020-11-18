@@ -581,9 +581,14 @@ document.addEventListener("DOMContentLoaded", () => {
   //   <img class="img-fluid" src="${x.img}"/>
 
    var $grid2 = $(".grid2").isotope({
+    // itemSelector: ".element-item",
+    // layoutMode: "fitRows",
+    // getSortData: {},
     itemSelector: ".element-item",
-    layoutMode: "fitRows",
-    getSortData: {},
+    masonry: {
+      columnWidth : 1,
+      isFitWidth: true
+    }
   });
 
   // filter functions
@@ -595,5 +600,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // use filterFn if matches value
     filterValue = filterFns[filterValue] || filterValue;
     $grid2.isotope({ filter: filterValue });
+
+    $(this).siblings().removeClass('activex')
+    $(this).addClass('activex');
   });
 });
