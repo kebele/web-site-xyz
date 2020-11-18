@@ -8,9 +8,18 @@
       src="https://kit.fontawesome.com/c9da5a481d.js"
       crossorigin="anonymous"
     ></script>
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <!-- <link rel="stylesheet" href="timesx.css"> -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .ekko-lightbox-nav-overlay a span {
+    padding: 0 30px;
+    color: red;
+}
+    </style>
   </head>
 
   <body>
@@ -43,7 +52,7 @@
     <section class="expert" id="expert">
       <div class="title">
         <!-- <h2 class="titleText">Our <span>k</span>itchen <span>e</span>xpert</h2> -->
-        <h2 class="titleText" style="margin-top: 50px; margin-bottom: 50px;">portfolio</h2>
+        <h2 class="titleText" style="margin-top: 30px; margin-bottom: 50px;">portfolio</h2>
         <!-- <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
           cumque.
@@ -55,47 +64,10 @@
         <button class="btn" data-filter=".react">react</button>
         <button class="btn" data-filter=".d3">d3</button>
         <button class="btn" data-filter="*">all</button>
-        <!-- <button data-filter=".html"><i class="fab fa-html5"></i> <i class="fab fa-css3"></i></button>
-        <button data-filter=".js"><i class="fab fa-js fa-2x"></i></button>
-        <button class="btn" data-filter=".vue">vue</button>
-        <button class="btn" data-filter=".react">react</button>
-        <button class="btn" data-filter="*">all</button> -->
+        
       </div>
         
-      <!-- </div>
-      <div class="content">
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/expert1.jpg" alt="" />
-          </div>
-          <div class="text">
-            <h3>someone famous</h3>
-          </div>
-        </div>
-       <div class="box">
-          <div class="imgBx">
-            <img src="images/expert2.jpg" alt="" />
-          </div>
-          <div class="text">
-            <h3>someone famous</h3>
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/expert3.jpg" alt="" />
-          </div>
-          <div class="text">
-            <h3>someone famous</h3>
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/expert4.jpg" alt="" />
-          </div>
-          <div class="text">
-            <h3>someone famous</h3>
-          </div>
-        </div>  -->
+      
 
         
 
@@ -109,15 +81,72 @@
 
     </section>
     <!-- certificates -->
+
+
     <section class="menu" id="menu">
       <div class="title">
         <h2 class="titleText"><span>c</span>ertificates</h2>
-        <!-- <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
-          cumque.
-        </p> -->
+        
       </div>
-      <div class="content">
+
+      <div class="container">      
+        <div class="row" id="nav-content">          
+            <div class="col-md-4 col-sm-6 col-xs-12 web">             
+                <div class="card mb-4 shadow-sm">
+                    <a href="images/responsive_web_design.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="images/responsive_web_design.png" class="card-img-top" alt="xxx">
+                    </a>                  
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">             
+                <div class="card mb-4 shadow-sm">
+                    <a href="images/javascript_algorithms_n_data_structures.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="images/javascript_algorithms_n_data_structures.png" class="card-img-top" alt="xxx">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">             
+                <div class="card mb-4 shadow-sm">
+                    <a href="images/fcc_frontend_certificate.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="images/fcc_frontend_certificate.png" class="card-img-top" alt="xxx">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">             
+                <div class="card mb-4 shadow-sm">
+                    <a href="images/data_visualization.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="images/data_visualization.png" class="card-img-top" alt="xxx">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">             
+                <div class="card mb-4 shadow-sm">
+                    <a href="images/20_web_projects_kebele.jpg" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="images/20_web_projects_kebele.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">             
+                <div class="card mb-4 shadow-sm">
+                    <a href="images/vuejs_certificate_kebele.jpg" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="images/vuejs_certificate_kebele.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">             
+                <div class="card mb-4 shadow-sm">
+                    <a href="images/nuxtjs.jpg" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="images/nuxtjs.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+      <!-- <div class="content">
         <div class="box">
           <div class="imgBx">
             <img src="images/responsive_web_design.png" alt="" />
@@ -153,97 +182,10 @@
             <img src="images/nuxtjs.jpg" alt="" />
           </div>
         </div>
-      </div>
-      <!-- <div class="title">
-        <a href="#" class="btn">view all</a>
       </div> -->
+      
     </section>
-    <!-- testimonials -->
-    <!-- <section class="testimonials" id="testimonials">
-      <div class="title white">
-        <h2 class="titleText">they <span>s</span>aid about us</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
-          cumque.
-        </p>
-      </div>
-      <div class="content">
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/testi1.jpg" alt="" />
-          </div>
-          <div class="text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              unde incidunt laudantium qui at officia cumque. Culpa delectus ab
-              repudiandae pariatur corrupti repellendus dicta deleniti, vero,
-              optio voluptatum corporis odit quidem minus animi! Nemo debitis
-              quae repellendus voluptas tempore quisquam!
-            </p>
-            <h3>someone famous</h3>
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/testi2.jpg" alt="" />
-          </div>
-          <div class="text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              unde incidunt laudantium qui at officia cumque. Culpa delectus ab
-              repudiandae pariatur corrupti repellendus dicta deleniti, vero,
-              optio voluptatum corporis odit quidem minus animi! Nemo debitis
-              quae repellendus voluptas tempore quisquam!
-            </p>
-            <h3>someone famous</h3>
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/testi3.jpg" alt="" />
-          </div>
-          <div class="text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              unde incidunt laudantium qui at officia cumque. Culpa delectus ab
-              repudiandae pariatur corrupti repellendus dicta deleniti, vero,
-              optio voluptatum corporis odit quidem minus animi! Nemo debitis
-              quae repellendus voluptas tempore quisquam!
-            </p>
-            <h3>someone famous</h3>
-          </div>
-        </div>
-      </div>
-    </section> -->
-<!-- contact -->
-    <!-- <section class="contact" id="contact">
-      <div class="title">
-        <h2 class="titleText"><span>c</span>ontact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
-          cumque.
-        </p>
-      </div>
-      <div class="contactForm">
-        <h3>send message</h3>
-        <div class="inputBox">
-          <input type="text" value="name" />
-        </div>
-        <div class="inputBox">
-          <input type="text" placeholder="email" />
-        </div>
-        <div class="inputBox">
-          <textarea placeholder="your message..."></textarea>
-        </div>
-        <div class="inputBox">
-          <input type="submit" value="Send" />
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <div class="copyrightText">
-      <p>copyright 2020 | <a href="#">kebele</a><br />all rights reserved</p>
-    </div> -->
+    
 <!-- about -->
 <section class="about" id="about">
   <div class="row content">
@@ -253,46 +195,7 @@
 
       
       <div class="entries">
-      <!-- <table
-        style="margin-top : 80px;"       
-        data-aos="fade-up-left"
-        data-aos-duration="1000"
-        data-aos-delay="900"
-      >
-        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
-          <td stylex="color: tomato">1977</td>
-          <td stylex="color: #f1c40f">born</td>
-          <td stylex="color: #0abde3">hello world<br></td>
-        </tr>
-        
-        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
-          <td stylex="color: tomato">1994 1999</td>
-          <td stylex="color: #f1c40f">graduate</td>
-          <td stylex="color: #0abde3">
-            economics <br />faculty of economics & administrative sciences
-            <br />Karadeniz Technical University
-          </td>
-        </tr>
-        
-        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
-          <td stylex="color: tomato">2000 2016</td>
-          <td stylex="color: #f1c40f">government, civil servant</td>
-          <td stylex="color: #0abde3; height:60px">
-            Presidency of Defence Industries <br />
-            Presidency of the Republic of Turkey
-          </td>
-        </tr>
-        
-        
-        <tr style="font-weight:bold; font-size:1.1rem; height:80px">
-          <td stylex="color: tomato">2015 +</td>
-          <td stylex="color: #f1c40f">coding with persistence</td>
-          <td stylex="color: #0abde3">
-            will be get somewhere soon, I hope. <br />
-            😇
-          </td>
-        </tr>
-      </table> -->
+      
       <div class="entry">
         <div class="titleA">1977</div>
         <div class="body">
@@ -319,7 +222,7 @@
     <div class="entry">
         <div class="titleA">2015 - now</div> 
         <div class="body">
-            <p>coding with persistence<</p>
+            <p>coding with persistence</p>
             <p>will be get somewhere soon, I hope. <br />
               😇</p>
         </div>
@@ -354,11 +257,17 @@
 
 
   
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> -->
-
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- isotope JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     
 
     <script src="projects.js"></script>
