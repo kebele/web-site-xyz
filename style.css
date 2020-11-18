@@ -2,7 +2,6 @@
 
 *{
     margin: 0;padding: 0;box-sizing: border-box;
-    font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
 }
@@ -485,7 +484,6 @@ a {
     min-height: 100vh;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
 }
 
 .timeline:before{
