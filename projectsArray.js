@@ -43,6 +43,17 @@ let projects = [
       flip : "flip-left",
       inspire : "inspired"
     },
+	{
+      tech: "js",
+      name: "beer generator",
+      code: "https://github.com/kebele/beer_generator",
+      linkx: "https://beer-generator.vercel.app/",
+      icon: "fab fa-js",
+      color: "#34495e",
+      background : "secondary",
+      flip : "flip-up",
+      inspire : "partially inspired"
+    },
     {
       tech: "js",
       name: "meal finder",
