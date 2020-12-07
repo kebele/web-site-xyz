@@ -13,7 +13,10 @@
 p{
     font-weight: 300;
     color: #111;
+    font-size: 20px;
 }
+
+
 .banner{
     position: relative;
     width: 100%;
@@ -54,9 +57,6 @@ p{
     pointer-events: none;
 } */
 
-
-
-
 .banner .content{
     max-width: 900px;
     text-align: center;
@@ -66,7 +66,7 @@ p{
     color: whitesmoke;
 }
 .banner .content p{
-    font-size: 1em;
+    /* font-size: 1em; */
     color: whitesmoke;
 }
 .btn{
@@ -173,7 +173,7 @@ section{
 }
 .titleText{
     /* color: black; */
-    color: mintcream;
+    /* color: mintcream; */
     font-size: 2em;
     font-weight: 700;
     margin-top : 50px;
@@ -181,7 +181,7 @@ section{
 .titleText span{
     color: crimson;
     font-weight: 700;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 /* div kısmı */
 .row .col50 .imgBx{
@@ -248,6 +248,13 @@ section{
     font-weight: 400;
     color: black;
 }
+
+.menu .web .card a img:hover{
+    transform : scale(1.02);
+    box-shadow: 4px 4px 10px 7px rgba(57, 53, 115, 0.71);
+    transition: .3s;  
+}
+
 .about{
     display: flex;
     justify-content: center;
@@ -329,7 +336,6 @@ a {
   border : 1px solid black;
   /* background: #ecf0f1; */
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
-
   /* color: #262524; */
   box-shadow: 4px 4px 9px 0px rgba(57, 53, 115, 0.51);  
   /* transition: transform 0.4s; */
