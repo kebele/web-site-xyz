@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
   //   <img class="img-fluid" src="${x.img}"/>
 
    var $grid2 = $(".grid2").isotope({
-    // itemSelector: ".element-item",
-    // layoutMode: "fitRows",
-    // getSortData: {},
     itemSelector: ".element-item",
-    masonry: {
-      columnWidth : 1,
-      isFitWidth: true
-    }
+    layoutMode: "fitRows",
+    // getSortData: {},
+    // itemSelector: ".element-item",
+    // masonry: {
+    //   columnWidth : 1,
+    //   isFitWidth: true
+    // }
   });
 
   // filter functions
