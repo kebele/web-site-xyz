@@ -121,6 +121,17 @@ let projects = [
       inspire : "inspired"
     },
     {
+      tech: "html",
+      name: "gallery isotope",
+      code: "https://github.com/kebele/gallery_isotope",
+      linkx: "https://gallery-isotope.vercel.app/",
+      icon: "fab fa-css3",
+      color: "#df4759",
+      background : "danger",
+      flip : "fade-down-right",
+      inspire : "inspired"
+    },
+    {
       tech: "D3",
       name: "tree map",
       code: "https://github.com/kebele/treemap_D3",
