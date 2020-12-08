@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
+    <!-- <link rel="stylesheet" href="timesx.css"> -->
     <link rel="stylesheet" href="style.css" />
 
     <style>
@@ -84,9 +85,7 @@
         <h2 class="titleText" style="margin-bottom: 50px">
           <span>p</span><span style="color: black">ortfolio</span>
         </h2>
-        <p style="font-weight: 500">
-          All projects are running but not final, I'm working on it!
-        </p>
+        
         <div id="filters">
           <button class="btn" data-filter=".html">html/css</button>
           <button class="btn" data-filter=".js">javascript</button>
@@ -95,10 +94,14 @@
           <button class="btn" data-filter=".d3">d3</button>
           <button class="btn activex" data-filter="*">all</button>
         </div>
+        
       </div>
       <div class="grid2 content">
         <div class="proje"></div>
       </div>
+      <p style="font-weight: 500">
+        All projects are running but not final, I'm working on it!
+      </p>
     </section>
 
     <!-- CERTIFICATES -->
@@ -108,119 +111,17 @@
           <span>c</span><span style="color: black">ertificates</span>
         </h2>
       </div>
-
-      <div class="container">
-        <div class="row" id="nav-content">
-          <div class="col-sm-4 mb-1">
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 web"> -->
-            <!-- <div class="card mb-4 shadow-sm"> -->
-              <a
-                href="images/responsive_web_design.png"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img
-                  src="images/responsive_web_design.png"
-                  class="card-img-top"
-                  alt="xxx"
-                />
-              </a>
-            <!-- </div> -->
-          </div>
-          <div class="col-sm-4 mb-1">
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 web"> -->
-            <!-- <div class="card mb-4 shadow-sm"> -->
-              <a
-                href="images/javascript_algorithms_n_data_structures.png"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img
-                  src="images/javascript_algorithms_n_data_structures.png"
-                  class="card-img-top"
-                  alt="xxx"
-                />
-              </a>
-            <!-- </div> -->
-          </div>
-          <div class="col-sm-4 mb-1">
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 web"> -->
-            <!-- <div class="card mb-4 shadow-sm"> -->
-              <a
-                href="images/front_end_libraries.png"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img
-                  src="images/front_end_libraries.png"
-                  class="card-img-top"
-                  alt="xxx"
-                />
-              </a>
-            <!-- </div> -->
-          </div>
-          <div class="col-sm-4 mb-1">
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 web"> -->
-            <!-- <div class="card mb-4 shadow-sm"> -->
-              <a
-                href="images/20_web_projects_kebele.jpg"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img
-                  src="images/20_web_projects_kebele.jpg"
-                  class="card-img-top"
-                  alt="xxx"
-                />
-              </a>
-            <!-- </div> -->
-          </div>
-          <div class="col-sm-4 mb-1">
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 web"> -->
-            <!-- <div class="card mb-4 shadow-sm"> -->
-              <a
-                href="images/data_visualization.png"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img
-                  src="images/data_visualization.png"
-                  class="card-img-top"
-                  alt="xxx"
-                />
-              </a>
-            <!-- </div> -->
-          </div>
-          <div class="col-sm-4 mb-1">
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 web"> -->
-            <!-- <div class="card mb-4 shadow-sm"> -->
-              <a
-                href="images/vuejs_certificate_kebele.jpg"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img
-                  src="images/vuejs_certificate_kebele.jpg"
-                  class="card-img-top"
-                  alt="xxx"
-                />
-              </a>
-            <!-- </div> -->
-          </div>
-          <div class="col-sm-4 mb-1">
-          <!-- <div class="col-md-4 col-sm-6 col-xs-12 web"> -->
-            <!-- <div class="card mb-4 shadow-sm"> -->
-              <a
-                href="images/nuxtjs.jpg"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img src="images/nuxtjs.jpg" class="card-img-top" alt="xxx" />
-              </a>
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
+      <div class="cont">
+        <img src="images/responsive_web_design.png" alt="">
+    <img src="images/javascript_algorithms_n_data_structures.png" alt="">
+    <img src="images/fcc_frontend_certificate.png" alt="">
+    <img src="images/20_web_projects_kebele.jpg" alt="">
+    <img src="images/data_visualization.png" alt="">
+    <img src="images/vuejs_certificate_kebele.jpg" alt="">
+    <img src="images/nuxtjs.jpg" alt="">
+    
+    </div>
+     
     </section>
 
     <!-- ABOUT -->
@@ -336,7 +237,7 @@
       ></a>
     </div>
 
-    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -358,10 +259,10 @@
     <!-- lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-    <script src="isotope.js"></script>
-    <script src="typeWriter.js"></script>
     <script src="projects.js"></script>
+    <script src="isotope.js"></script>
     <script src="projectsArray.js"></script>
+    <script src="typeWriter.js"></script>
 
     <script>
       window.addEventListener('scroll', function () {
