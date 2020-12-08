@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kbeler</title>
+    <title>kebele</title>
 
     <script
       src="https://kit.fontawesome.com/c9da5a481d.js"
@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
+    <!-- <link rel="stylesheet" href="timesx.css"> -->
     <link rel="stylesheet" href="style.css" />
 
     <style>
@@ -32,16 +33,28 @@
 
   <body>
     <header id="header">
+      <!-- <a href="#" class="logo">ke<span>bele</span></a> -->
       <a href="#" class="logo"
         ><span class="ke">k</span><span class="be">be</span
         ><span class="le">ler</span></a
       >
-
+      <!-- <div class="menuToggle" onclick="toggleMenu()"> </div>     
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu()">home</a></li>
+        <li><a href="#expert" onclick="toggleMenu()">portfolio</a></li>
+        <li><a href="#menu" onclick="toggleMenu()">certificates</a></li>
+        <li><a href="#about" onclick="toggleMenu()">about</a></li>
+        <li><a href="#testimonials" onclick="toggleMenu()">testimonials</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">contact</a></li> 
+      </ul>
+    -->
       <ul>
         <li><a href="#banner" class="active" onclick="toggle()">home</a></li>
         <li><a href="#expert" onclick="toggle()">portfolio</a></li>
         <li><a href="#menu" onclick="toggle()">certificates</a></li>
         <li><a href="#about" onclick="toggle()">about</a></li>
+        <!-- <li><a href="#team" onclick="toggle()">team</a></li>
+      <li><a href="#contact" onclick="toggle()">contact</a></li> -->
       </ul>
       <div class="toggle" onclick="toggle()"></div>
     </header>
@@ -52,6 +65,8 @@
           <!-- <h2>< coder /></h2> -->
         </div>
         <div>
+          <!-- <p>html css javascript vue react mongo nodejs express d3 p5 wordpress</p> -->
+
           <br />
           <p
             class="txt-type"
@@ -70,6 +85,9 @@
         <h2 class="titleText" style="margin-bottom: 50px">
           <span>p</span><span style="color: black">ortfolio</span>
         </h2>
+        <p style="font-weight: 500">
+          All projects are running but not final, I'm working on it!
+        </p>
         <div id="filters">
           <button class="btn" data-filter=".html">html/css</button>
           <button class="btn" data-filter=".js">javascript</button>
@@ -100,6 +118,8 @@
                 href="images/responsive_web_design.png"
                 data-gallery="web-gallery"
                 data-toggle="lightbox"
+                data-title=""
+                data-footer=""
               >
                 <img
                   src="images/responsive_web_design.png"
@@ -115,6 +135,8 @@
                 href="images/javascript_algorithms_n_data_structures.png"
                 data-gallery="web-gallery"
                 data-toggle="lightbox"
+                data-title=""
+                data-footer=""
               >
                 <img
                   src="images/javascript_algorithms_n_data_structures.png"
@@ -127,27 +149,14 @@
           <div class="col-md-4 col-sm-6 col-xs-12 web">
             <div class="card mb-4 shadow-sm">
               <a
-                href="images/fcc_frontend_certificate.png"
+                href="images/front_end_libraries.png"
                 data-gallery="web-gallery"
                 data-toggle="lightbox"
+                data-title=""
+                data-footer=""
               >
                 <img
-                  src="images/fcc_frontend_certificate.png"
-                  class="card-img-top"
-                  alt="xxx"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 web">
-            <div class="card mb-4 shadow-sm">
-              <a
-                href="images/data_visualization.png"
-                data-gallery="web-gallery"
-                data-toggle="lightbox"
-              >
-                <img
-                  src="images/data_visualization.png"
+                  src="images/front_end_libraries.png"
                   class="card-img-top"
                   alt="xxx"
                 />
@@ -160,6 +169,8 @@
                 href="images/20_web_projects_kebele.jpg"
                 data-gallery="web-gallery"
                 data-toggle="lightbox"
+                data-title=""
+                data-footer=""
               >
                 <img
                   src="images/20_web_projects_kebele.jpg"
@@ -172,9 +183,28 @@
           <div class="col-md-4 col-sm-6 col-xs-12 web">
             <div class="card mb-4 shadow-sm">
               <a
+                href="images/data_visualization.png"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+                data-title=""
+                data-footer=""
+              >
+                <img
+                  src="images/data_visualization.png"
+                  class="card-img-top"
+                  alt="xxx"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
                 href="images/vuejs_certificate_kebele.jpg"
                 data-gallery="web-gallery"
                 data-toggle="lightbox"
+                data-title=""
+                data-footer=""
               >
                 <img
                   src="images/vuejs_certificate_kebele.jpg"
@@ -190,6 +220,8 @@
                 href="images/nuxtjs.jpg"
                 data-gallery="web-gallery"
                 data-toggle="lightbox"
+                data-title=""
+                data-footer=""
               >
                 <img src="images/nuxtjs.jpg" class="card-img-top" alt="xxx" />
               </a>
@@ -205,6 +237,8 @@
           <h2 class="titleText" style="margin-bottom: 50px">
             <span>a</span><span style="color: black">bout</span>
           </h2>
+          <!-- <h2 class="section-heading">about</h2> -->
+          <!--<h3 class="section-subheading text-muted"></h3> -->
         </div>
         <ul class="timeline">
           <li>
