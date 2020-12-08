@@ -2,317 +2,298 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kebele</title>
-    
+    <title>kbeler</title>
+
     <script
       src="https://kit.fontawesome.com/c9da5a481d.js"
       crossorigin="anonymous"
     ></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- lightbox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-    <!-- <link rel="stylesheet" href="timesx.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <style>
       .ekko-lightbox-nav-overlay a span {
-    padding: 0 30px;
-    color: red;
-}
+        padding: 0 30px;
+        color: red;
+      }
     </style>
   </head>
 
   <body>
     <header id="header">
-      <!-- <a href="#" class="logo">ke<span>bele</span></a> -->
       <a href="#" class="logo"
         ><span class="ke">k</span><span class="be">be</span
         ><span class="le">ler</span></a
       >
-      <!-- <div class="menuToggle" onclick="toggleMenu()"> </div>     
-      <ul class="navigation">
-        <li><a href="#banner" onclick="toggleMenu()">home</a></li>
-        <li><a href="#expert" onclick="toggleMenu()">portfolio</a></li>
-        <li><a href="#menu" onclick="toggleMenu()">certificates</a></li>
-        <li><a href="#about" onclick="toggleMenu()">about</a></li>
-        <li><a href="#testimonials" onclick="toggleMenu()">testimonials</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">contact</a></li> 
+
+      <ul>
+        <li><a href="#banner" class="active" onclick="toggle()">home</a></li>
+        <li><a href="#expert" onclick="toggle()">portfolio</a></li>
+        <li><a href="#menu" onclick="toggle()">certificates</a></li>
+        <li><a href="#about" onclick="toggle()">about</a></li>
       </ul>
-    -->
-    <ul>
-      <li><a href="#banner" class="active" onclick="toggle()">home</a></li>
-      <li><a href="#expert" onclick="toggle()">portfolio</a></li>
-      <li><a href="#menu" onclick="toggle()">certificates</a></li>
-      <li><a href="#about" onclick="toggle()">about</a></li>
-      <!-- <li><a href="#team" onclick="toggle()">team</a></li>
-      <li><a href="#contact" onclick="toggle()">contact</a></li> -->
-    </ul>
-    <div class="toggle" onclick="toggle()"></div> 
+      <div class="toggle" onclick="toggle()"></div>
     </header>
-    
+
     <section class="banner image" id="banner">
-      
       <div class="content">
         <div class="coder">
           <!-- <h2>< coder /></h2> -->
         </div>
         <div>
-          <!-- <p>html css javascript vue react mongo nodejs express d3 p5 wordpress</p> -->
-          
-          <br>
-          <p class="txt-type" style="font-size: 25px; color:whitesmoke; width: 380px;" data-wait="3000" data-words='["html, css, javascript, vue, react, bootstrap, mongodb, nodejs, express, d3, p5, wordpress, webflow"]'></p>
-          <br>
+          <br />
+          <p
+            class="txt-type"
+            style="font-size: 25px; color: whitesmoke; width: 380px"
+            data-wait="3000"
+            data-words='["html, css, javascript, vue, react, bootstrap, mongodb, nodejs, express, d3, p5, wordpress, webflow"]'
+          ></p>
+          <br />
         </div>
-        <!-- <a href="#" class="btn">our menu</a> -->
       </div>
     </section>
 
-<!-- portfolio -->
+    <!-- portfolio -->
     <section class="expert" id="expert">
       <div class="title">
-        <!-- <h2 class="titleText">Our <span>k</span>itchen <span>e</span>xpert</h2> -->
-        <!-- <h2 class="titleText" style="margin-top: 30px; margin-bottom: 20px;">portfolio</h2> -->
-        <h2 class="titleText" style="margin-bottom:50px"><span>p</span><span style="color:black">ortfolio</span></h2>
-        <!-- <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
-          cumque.
-        </p> -->
+        <h2 class="titleText" style="margin-bottom: 50px">
+          <span>p</span><span style="color: black">ortfolio</span>
+        </h2>
         <div id="filters">
-        <button class="btn" data-filter=".html">html/css</button>
-        <button class="btn" data-filter=".js">javascript</button>
-        <button class="btn" data-filter=".vue">vue</button>
-        <button class="btn" data-filter=".react">react</button>
-        <button class="btn" data-filter=".d3">d3</button>
-        <button class="btn activex" data-filter="*">all</button>
-        
-      </div>
-        
+          <button class="btn" data-filter=".html">html/css</button>
+          <button class="btn" data-filter=".js">javascript</button>
+          <button class="btn" data-filter=".vue">vue</button>
+          <button class="btn" data-filter=".react">react</button>
+          <button class="btn" data-filter=".d3">d3</button>
+          <button class="btn activex" data-filter="*">all</button>
+        </div>
       </div>
       <div class="grid2 content">
-          <div class="proje">
-            
-          </div>
-        </div>
-
+        <div class="proje"></div>
+      </div>
     </section>
 
     <!-- certificates -->
     <section class="menu" id="menu">
       <div class="title">
-        <h2 class="titleText"><span>c</span><span style="color:black">ertificates</span></h2>        
-        
+        <h2 class="titleText">
+          <span>c</span><span style="color: black">ertificates</span>
+        </h2>
       </div>
 
-      <div class="container">      
-        <div class="row" id="nav-content">          
-            <div class="col-md-4 col-sm-6 col-xs-12 web">             
-                <div class="card mb-4 shadow-sm">
-                    <a href="images/responsive_web_design.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
-                        <img src="images/responsive_web_design.png" class="card-img-top" alt="xxx">
-                    </a>                  
-                </div>
+      <div class="container">
+        <div class="row" id="nav-content">
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
+                href="images/responsive_web_design.png"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="images/responsive_web_design.png"
+                  class="card-img-top"
+                  alt="xxx"
+                />
+              </a>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 web">             
-                <div class="card mb-4 shadow-sm">
-                    <a href="images/javascript_algorithms_n_data_structures.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
-                        <img src="images/javascript_algorithms_n_data_structures.png" class="card-img-top" alt="xxx">
-                    </a>
-                </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
+                href="images/javascript_algorithms_n_data_structures.png"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="images/javascript_algorithms_n_data_structures.png"
+                  class="card-img-top"
+                  alt="xxx"
+                />
+              </a>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 web">             
-                <div class="card mb-4 shadow-sm">
-                    <a href="images/fcc_frontend_certificate.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
-                        <img src="images/fcc_frontend_certificate.png" class="card-img-top" alt="xxx">
-                    </a>
-                </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
+                href="images/fcc_frontend_certificate.png"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="images/fcc_frontend_certificate.png"
+                  class="card-img-top"
+                  alt="xxx"
+                />
+              </a>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 web">             
-                <div class="card mb-4 shadow-sm">
-                    <a href="images/data_visualization.png" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
-                        <img src="images/data_visualization.png" class="card-img-top" alt="xxx">
-                    </a>
-                </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
+                href="images/data_visualization.png"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="images/data_visualization.png"
+                  class="card-img-top"
+                  alt="xxx"
+                />
+              </a>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 web">             
-                <div class="card mb-4 shadow-sm">
-                    <a href="images/20_web_projects_kebele.jpg" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
-                        <img src="images/20_web_projects_kebele.jpg" class="card-img-top" alt="xxx">
-                    </a>
-                </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
+                href="images/20_web_projects_kebele.jpg"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="images/20_web_projects_kebele.jpg"
+                  class="card-img-top"
+                  alt="xxx"
+                />
+              </a>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 web">             
-                <div class="card mb-4 shadow-sm">
-                    <a href="images/vuejs_certificate_kebele.jpg" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
-                        <img src="images/vuejs_certificate_kebele.jpg" class="card-img-top" alt="xxx">
-                    </a>
-                </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
+                href="images/vuejs_certificate_kebele.jpg"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+              >
+                <img
+                  src="images/vuejs_certificate_kebele.jpg"
+                  class="card-img-top"
+                  alt="xxx"
+                />
+              </a>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 web">             
-                <div class="card mb-4 shadow-sm">
-                    <a href="images/nuxtjs.jpg" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
-                        <img src="images/nuxtjs.jpg" class="card-img-top" alt="xxx">
-                    </a>
-                </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 web">
+            <div class="card mb-4 shadow-sm">
+              <a
+                href="images/nuxtjs.jpg"
+                data-gallery="web-gallery"
+                data-toggle="lightbox"
+              >
+                <img src="images/nuxtjs.jpg" class="card-img-top" alt="xxx" />
+              </a>
             </div>
-            
-        </div>
-    </div>
-
-
-
-
-      <!-- <div class="content">
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/responsive_web_design.png" alt="" />
-          </div>          
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/javascript_algorithms_n_data_structures.png" alt="" />
           </div>
         </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/fcc_frontend_certificate.png" alt="" />
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/20_web_projects_kebele.jpg" alt="" />
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/data_visualization.png" alt="" />
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/vuejs_certificate_kebele.jpg" alt="" />
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="images/nuxtjs.jpg" alt="" />
-          </div>
-        </div>
-      </div> -->
-      
+      </div>
     </section>
-    
-<!-- about -->
-<!-- <section class="about" id="about">
-  <div class="row content">
-    <div class="col50">
-      <h2 class="titleText" style="margin-top:20px"><span>a</span>bout</h2>
-      <div class="timeline">
 
-      
-      <div class="entries">
-      
-      <div class="entry">
-        <div class="titleA">1977</div>
-        <div class="body">
-            <p>born </p>
-            <p>hello world!</p>
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="titleText" style="margin-bottom: 50px">
+            <span>a</span><span style="color: black">bout</span>
+          </h2>
         </div>
-    </div>
-    <div class="entry">
-        <div class="titleA">1994 - 1999</div>
-        <div class="body">
-            <p>graduate</p>
-            <p>economics <br />faculty of economics & administrative sciences
-              <br />Karadeniz Technical University</p>
-        </div>
-    </div>
-    <div class="entry">
-        <div class="titleA">2000 - 2016</div>
-        <div class="body">
-            <p>government, civil servant</p>
-            <p>Presidency of Defence Industries <br />
-              Presidency of the Republic of Turkey</p>
-        </div>
-    </div>
-    <div class="entry">
-        <div class="titleA">2015 - now</div> 
-        <div class="body">
-            <p>coding with persistence</p>
-            <p>will be get somewhere soon, I hope. <br />
-              😇</p>
-        </div>
-    </div>   
-    
-    
-    </div>
-  </div>     
-    </div>
-    <div class="col50">
-      <div class="imgBx">
-        <img src="images/pexels-amit-pal-1583112.jpg" alt="" />
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="page-section" id="about">
-  <div class="container">
-      <div class="text-center">
-        <h2 class="titleText" style="margin-bottom:50px"><span>a</span><span style="color:black">bout</span></h2>
-           <!-- <h2 class="section-heading">about</h2> -->
-          <!--<h3 class="section-subheading text-muted"></h3> -->
-      </div>
-      <ul class="timeline">
+        <ul class="timeline">
           <li>
-              <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/baby.png" alt="" /></div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                      <h4>1977</h4>
-                  </div>
-                  <div class="timeline-body"><h6>hello world!<br></h6></div>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="images/baby.png"
+                alt=""
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>1977</h4>
               </div>
+              <div class="timeline-body">
+                <h6>hello world!<br /></h6>
+              </div>
+            </div>
           </li>
           <li class="timeline-inverted">
-              <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/graduate.png" alt="" /></div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                      <h4>1994 - 1999</h4>
-                  </div>
-                  <div class="timeline-body"><h6>economics <br>
-                    faculty of economics & administrative sciences
-                    Karadeniz Technical University</h6><br></div>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="images/graduate.png"
+                alt=""
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>1994 - 1999</h4>
               </div>
+              <div class="timeline-body">
+                <h6>
+                  economics <br />
+                  faculty of economics & administrative sciences Karadeniz
+                  Technical University
+                </h6>
+                <br />
+              </div>
+            </div>
           </li>
           <li>
-              <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/civil_servant.png" alt="" /></div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                      <h4>2000 - 2016</h4>
-                  </div>
-                  <div class="timeline-body"><h6>government, civil servant <br>Presidency of Defence Industries <br>
-                    Presidency of the Republic of Turkey</h6>
-                  <br></div>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="images/civil_servant.png"
+                alt=""
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2000 - 2016</h4>
               </div>
+              <div class="timeline-body">
+                <h6>
+                  government, civil servant <br />Presidency of Defence
+                  Industries <br />
+                  Presidency of the Republic of Turkey
+                </h6>
+                <br />
+              </div>
+            </div>
           </li>
           <li class="timeline-inverted">
-              <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/coder.png" alt="" /></div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                      <h4>2015 - now</h4>
-                  </div>
-                  <div class="timeline-body"><h6>will be get somewhere soon, I hope.
-                    <br>
-                    😇</h6></div>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="images/coder.png"
+                alt=""
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2015 - now</h4>
               </div>
-          </li>          
-      </ul>
-  </div>
-</section>
+              <div class="timeline-body">
+                <h6>
+                  will be get somewhere soon, I hope.
+                  <br />
+                  😇
+                </h6>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-
-
-<!-- social -->
+    <!-- social -->
     <div class="social">
       <a href="https://codepen.io/ykemal/" target="_blank"
         ><i class="fab fa-codepen"></i
@@ -328,33 +309,39 @@
       ></a>
     </div>
 
-
-  
-    <!-- <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <!-- isotope JS -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    
 
     <script src="projects.js"></script>
     <script src="isotope.js"></script>
     <script src="projectsArray.js"></script>
     <script src="typeWriter.js"></script>
-       
+
     <script>
-      
-      window.addEventListener("scroll", function () {
+      window.addEventListener('scroll', function () {
         // y ekseninde yukarıdan aşağıya scroll old. header a sticky class ı ekleyecek
-        const header = document.querySelector("header");
-        const ke = document.querySelector(".ke");
-        header.classList.toggle("sticky", window.scrollY > 0);
+        const header = document.querySelector('header');
+        const ke = document.querySelector('.ke');
+        header.classList.toggle('sticky', window.scrollY > 0);
       });
 
       // function toggleMenu(){
@@ -363,10 +350,10 @@
       //     menuToggle.classList.toggle('active');
       //     navigation.classList.toggle('active');
       // }
-      function toggle(){
-            let headerx = document.getElementById("header");            
-            headerx.classList.toggle('active');
-        }
+      function toggle() {
+        let headerx = document.getElementById('header');
+        headerx.classList.toggle('active');
+      }
     </script>
   </body>
 </html>
