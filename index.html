@@ -27,65 +27,44 @@
       .ekko-lightbox-nav-overlay a span {
         padding: 0 30px;
         color: red;
-      } 
+      }
     </style>
   </head>
 
   <body>
     <header id="header">
-      <!-- <a href="#" class="logo">ke<span>bele</span></a> -->
       <a href="#" class="logo"
         ><span class="ke">k</span><span class="be">be</span
         ><span class="le">ler</span></a
       >
-      <!-- <div class="menuToggle" onclick="toggleMenu()"> </div>     
-      <ul class="navigation">
-        <li><a href="#banner" onclick="toggleMenu()">home</a></li>
-        <li><a href="#expert" onclick="toggleMenu()">portfolio</a></li>
-        <li><a href="#menu" onclick="toggleMenu()">certificates</a></li>
-        <li><a href="#about" onclick="toggleMenu()">about</a></li>
-        <li><a href="#testimonials" onclick="toggleMenu()">testimonials</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">contact</a></li> 
-      </ul>
-    -->
+
       <ul>
-        <li><a href="#banner" class="active" onclick="toggle()">home</a></li>
+        <li><a href="#home" class="active" onclick="toggle()">home</a></li>
         <li><a href="#expert" onclick="toggle()">portfolio</a></li>
         <li><a href="#menu" onclick="toggle()">certificates</a></li>
         <li><a href="#about" onclick="toggle()">about</a></li>
-        <!-- <li><a href="#team" onclick="toggle()">team</a></li>
-      <li><a href="#contact" onclick="toggle()">contact</a></li> -->
       </ul>
       <div class="toggle" onclick="toggle()"></div>
     </header>
 
-    <section class="banner image" id="banner">
+    <!-- HOME -->
+    <section class="home" id="home">
       <div class="content">
-        <div class="coder">
-          <!-- <h2>< coder /></h2> -->
-        </div>
-        <div>
-          <!-- <p>html css javascript vue react mongo nodejs express d3 p5 wordpress</p> -->
-
-          <br />
-          <p
-            class="txt-type"
-            style="font-size: 25px; color: whitesmoke; width: 380px"
-            data-wait="3000"
-            data-words='["html, css, javascript, vue, react, bootstrap, mongodb, nodejs, express, d3, p5, wordpress, webflow"]'
-          ></p>
-          <br />
-        </div>
+        <p
+          class="txt-type"
+          data-wait="3000"
+          data-words='["html, css, javascript, vue, react, bootstrap, mongodb, nodejs, express, d3, p5, wordpress, webflow"]'
+        ></p>
       </div>
     </section>
 
-    <!-- portfolio -->
+    <!-- PORTFOLIO -->
     <section class="expert" id="expert">
       <div class="title">
         <h2 class="titleText" style="margin-bottom: 50px">
           <span>p</span><span style="color: black">ortfolio</span>
         </h2>
-        
+
         <div id="filters">
           <button class="btn" data-filter=".html">html/css</button>
           <button class="btn" data-filter=".js">javascript</button>
@@ -94,12 +73,11 @@
           <button class="btn" data-filter=".d3">d3</button>
           <button class="btn activex" data-filter="*">all</button>
         </div>
-        
       </div>
       <div class="grid2 content">
         <div class="proje"></div>
       </div>
-      <p style="font-weight: 500">
+      <p>
         All projects are running but not final, I'm working on it!
       </p>
     </section>
@@ -111,17 +89,30 @@
           <span>c</span><span style="color: black">ertificates</span>
         </h2>
       </div>
-      <div class="cont">
-        <img src="images/responsive_web_design.png" alt="">
-    <img src="images/javascript_algorithms_n_data_structures.png" alt="">
-    <img src="images/fcc_frontend_certificate.png" alt="">
-    <img src="images/20_web_projects_kebele.jpg" alt="">
-    <img src="images/data_visualization.png" alt="">
-    <img src="images/vuejs_certificate_kebele.jpg" alt="">
-    <img src="images/nuxtjs.jpg" alt="">
-    
+      <!-- <div class="cont">
+        <img src="images/responsive_web_design.png" alt="" />
+        <img src="images/javascript_algorithms_n_data_structures.png" alt="" />
+        <img src="images/fcc_frontend_certificate.png" alt="" />
+        <img src="images/20_web_projects_kebele.jpg" alt="" />
+        <img src="images/data_visualization.png" alt="" />
+        <img src="images/vuejs_certificate_kebele.jpg" alt="" />
+        <img src="images/nuxtjs.jpg" alt="" />
+      </div> -->
+      <div class="cer_container">
+      
+      <div class="main-img">
+        <img src="images/javascript_algorithms_n_data_structures.png" alt="" id="current">
+      </div>
+      <div class="imgs">
+        <img src="images/responsive_web_design.png">
+        <img src="images/javascript_algorithms_n_data_structures.png">
+        <img src="images/fcc_frontend_certificate.png">
+        <img src="images/20_web_projects_kebele.jpg">
+        <img src="images/data_visualization.png">
+        <img src="images/vuejs_certificate_kebele.jpg">
+        <img src="images/nuxtjs.jpg">
+      </div>
     </div>
-     
     </section>
 
     <!-- ABOUT -->
@@ -236,7 +227,6 @@
         ><i class="far fa-envelope"></i
       ></a>
     </div>
-
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <script
@@ -282,6 +272,35 @@
         let headerx = document.getElementById('header');
         headerx.classList.toggle('active');
       }
+
+
+      const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
     </script>
   </body>
 </html>
