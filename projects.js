@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const proje = document.querySelector(".proje");  
 
-  for (x of projects) {
+ /* for (x of projects) {
     proje.innerHTML += 
     `
     <div class="element-item pro ${x.tech}">
@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
       <p class="info tooltip"><i class="fas fa-info"></i><span class="tooltiptext">${x.inspire}</span></p> 
     </div>`
   }
+  */
+  
+  projects.forEach(x => {
+	proje.innerHTML += `
+    <div class="element-item pro ${x.tech}">
+      <p class="name">${x.name}</p>
+      <p class="symbol" style="color:${x.color}"><i class="${x.icon}"></i></p>
+      <p class="weight"><a href="${x.code}" target="_blank">code</a></p>    
+      <p class="number"><a href="${x.linkx}" target="_blank">go</a></p>
+      <p class="info tooltip"><i class="fas fa-info"></i><span class="tooltiptext">${x.inspire}</span></p> 
+    </div>`
+  })
+  
   //   <img class="img-fluid" src="${x.img}"/>
 
    var $grid2 = $(".grid2").isotope({
