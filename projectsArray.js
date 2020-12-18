@@ -142,6 +142,17 @@ let projects = [
       flip : "fade-down-right",
       inspire : "inspired"
     },
+		{
+      tech: "html",
+      name: "background slider",
+      code: "https://github.com/kebele/50projects/tree/main/18_background_slider",
+      linkx: "https://background-slider.vercel.app/",
+      icon: "fab fa-css3",
+      color: "#df4759",
+      background : "danger",
+      flip : "fade-down-right",
+      inspire : "inspired"
+    },
     {
       tech: "D3",
       name: "tree map",
