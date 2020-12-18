@@ -131,6 +131,17 @@ let projects = [
       flip : "fade-down-right",
       inspire : "inspired"
     },
+	{
+      tech: "html",
+      name: "sticky scroll",
+      code: "https://github.com/kebele/sticky_scroll",
+      linkx: "https://sticky-scroll.vercel.app/",
+      icon: "fab fa-css3",
+      color: "#df4759",
+      background : "danger",
+      flip : "fade-down-right",
+      inspire : "inspired"
+    },
     {
       tech: "D3",
       name: "tree map",
