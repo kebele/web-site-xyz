@@ -65,6 +65,17 @@ let projects = [
       flip : "flip-up",
       inspire : "partially inspired"
     },
+	    {
+      tech: "js",
+      name: "plane war",
+      code: "https://github.com/kebele/plane_war",
+      linkx: "https://plane-war.vercel.app/",
+      icon: "fab fa-js",
+      color: "#34495e",
+      background : "secondary",
+      flip : "flip-up",
+      inspire : "partially inspired"
+    },
     {
       tech: "vue",
       name: "monster game",
