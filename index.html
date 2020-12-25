@@ -77,9 +77,7 @@
       <div class="grid2 content">
         <div class="proje"></div>
       </div>
-      <p>
-        All projects are running but not final, I'm working on it!
-      </p>
+      <p>All projects are running but not final, I'm working on it!</p>
     </section>
 
     <!-- CERTIFICATES -->
@@ -99,20 +97,23 @@
         <img src="images/nuxtjs.jpg" alt="" />
       </div> -->
       <div class="cer_container">
-      
-      <div class="main-img">
-        <img src="images/javascript_algorithms_n_data_structures.png" alt="" id="current">
+        <div class="main-img">
+          <img
+            src="images/javascript_algorithms_n_data_structures.png"
+            alt=""
+            id="current"
+          />
+        </div>
+        <div class="imgs">
+          <img src="images/responsive_web_design.png" />
+          <img src="images/javascript_algorithms_n_data_structures.png" />
+          <img src="images/fcc_frontend_certificate.png" />
+          <img src="images/20_web_projects_kebele.jpg" />
+          <img src="images/vuejs_certificate_kebele.jpg" />
+          <img src="images/nuxtjs.jpg" />
+          <img src="images/data_visualization.png" />
+        </div>
       </div>
-      <div class="imgs">
-        <img src="images/responsive_web_design.png">
-        <img src="images/javascript_algorithms_n_data_structures.png">
-        <img src="images/fcc_frontend_certificate.png">
-        <img src="images/20_web_projects_kebele.jpg">
-        <img src="images/vuejs_certificate_kebele.jpg">
-        <img src="images/nuxtjs.jpg">
-        <img src="images/data_visualization.png">
-      </div>
-    </div>
     </section>
 
     <!-- ABOUT -->
@@ -273,34 +274,50 @@
         headerx.classList.toggle('active');
       }
 
-
+      //certificate slider
       const current = document.querySelector('#current');
-const imgs = document.querySelector('.imgs');
-const img = document.querySelectorAll('.imgs img');
-const opacity = 0.6;
+      const imgs = document.querySelector('.imgs');
+      const img = document.querySelectorAll('.imgs img');
+      const opacity = 1;
 
-// Set first img opacity
-img[0].style.opacity = opacity;
+      // Set first img opacity
+      // img[0].style.opacity = opacity;
+      img.forEach((img) => (img.style.opacity = 0.6));
+      imgs.addEventListener('click', imgClick);
 
-imgs.addEventListener('click', imgClick);
+      let x = 0;
+      setInterval(() => {
+        img.forEach((img) => (img.style.opacity = 0.6));
+        // console.log(img[x].src);
+        current.src = img[x].src;
+        img[x].style.opacity = opacity;
+        x++;
 
-function imgClick(e) {
-  // Reset the opacity
-  img.forEach(img => (img.style.opacity = 1));
+        if (x > img.length - 1) {
+          x = 0;
+        }
+        // img[x].style.opacity = 1;
+      }, 2500);
 
-  // Change current image to src of clicked image
-  current.src = e.target.src;
 
-  // Add fade in class
-  current.classList.add('fade-in');
+      function imgClick(e) {
+        // Reset the opacity
+        // img.forEach((img) => (img.style.opacity = 0.6));
 
-  // Remove fade-in class after .5 seconds
-  setTimeout(() => current.classList.remove('fade-in'), 500);
+        // Change current image to src of clicked image
+        current.src = e.target.src;
 
-  // Change the opacity to opacity var
-  e.target.style.opacity = opacity;
-}
+        // Add fade in class
+        current.classList.add('fade-in');
 
+        // Remove fade-in class after .5 seconds
+        setTimeout(() => current.classList.remove('fade-in'), 500);
+
+        // Change the opacity to opacity
+        e.target.style.opacity = opacity;
+      }
+
+      
     </script>
   </body>
 </html>
