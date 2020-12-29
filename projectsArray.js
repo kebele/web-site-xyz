@@ -131,6 +131,17 @@ let projects = [
       flip : "fade-down-right",
       inspire : "inspired"
     },
+	{
+      tech: "html",
+      name: "rotating earth with plane",
+      code: "https://github.com/kebele/earth-rotating-with-plane",
+      linkx: "https://earth-rotating-with-plane.vercel.app/",
+      icon: "fab fa-css3",
+      color: "#df4759",
+      background : "danger",
+      flip : "fade-down-right",
+      inspire : "inspired"
+    },
     {
       tech: "html",
       name: "gallery isotope",
