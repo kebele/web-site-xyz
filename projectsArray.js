@@ -109,6 +109,17 @@ let projects = [
       flip : "flip-up",
       inspire : "inspired"
     },
+	{
+      tech: "js",
+      name: "basic angry birds",
+      code: "https://github.com/kebele/basic-angry-birds",
+      linkx: "https://basic-angry-birds.vercel.app/",
+      icon: "fab fa-js",
+      color: "#34495e",
+      background : "secondary",
+      flip : "flip-up",
+      inspire : "unique"
+    },
     {
       tech: "react",
       name: "random quote",
