@@ -496,7 +496,7 @@ let projects = [
     },
     {
       tech: "html",
-      name: "animate svg",
+      name: "food website",
       code: "https://github.com/kebele/food_inc",
       linkx: "https://food-inc.vercel.app/",
       icon: "fab fa-css3",
