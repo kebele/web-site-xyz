@@ -120,6 +120,17 @@ let projects = [
       flip : "flip-up",
       inspire : "inspired"
     },
+		    {
+      tech: "vue",
+      name: "music player",
+      code: "https://github.com/kebele/vue_music_player",
+      linkx: "https://vue-music-player.vercel.app/",
+      icon: "fab fa-vuejs",
+      color: "#41B883",
+      background : "info",
+      flip : "flip-left",
+      inspire : "inspired"
+    },
 	{
       tech: "js",
       name: "basic angry birds",
