@@ -505,6 +505,17 @@ let projects = [
       flip : "fade-down-right",
       inspire : "inspired"
     },
+	    {
+      tech: "vue",
+      name: "movie app",
+      code: "https://github.com/kebele/vue_movie",
+      linkx: "https://vue-movie.kebele.vercel.app/",
+      icon: "fab fa-vuejs",
+      color: "#41B883",
+      background : "info",
+      flip : "zoom-in",
+      inspire : "inspired"
+    }, 	
     {
       tech: "html",
       name: "site w",
