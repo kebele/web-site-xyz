@@ -66,6 +66,17 @@ let projects = [
       inspire : "partially inspired"
     },
 	    {
+      tech: "vue",
+      name: "calculator",
+      code: "https://github.com/kebele/vue_calculator",
+      linkx: "https://vue-calculator-eight.vercel.app/",
+      icon: "fab fa-vuejs",
+      color: "#41B883",
+      background : "info",
+      flip : "flip-left",
+      inspire : "inspired"
+    },
+	    {
       tech: "js",
       name: "plane war",
       code: "https://github.com/kebele/plane_war",
