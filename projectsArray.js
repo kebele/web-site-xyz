@@ -603,7 +603,18 @@ let projects = [
       background : "warning",
       flip : "zoom-in-down",
       inspire : "fcc inspired"
-    }, 
+    },
+    {
+      tech: "vue",
+      name: "to do app",
+      code: "https://github.com/kebele/vue_todo",
+      linkx: "https://vue-todo-sigma.vercel.app/#/",
+      icon: "fab fa-vuejs",
+      color: "#41B883",
+      background : "info",
+      flip : "zoom-in",
+      inspire : "inspired"
+    }, 	
     {
       tech: "html",
       name: "clock",
