@@ -593,6 +593,17 @@ let projects = [
       flip : "fade-down-right",
       inspire : "inspired"
     },
+		    {
+      tech: "vue",
+      name: "anime search",
+      code: "https://github.com/kebele/vue_anime_search",
+      linkx: "https://vue-anime-search.vercel.app/",
+      icon: "fab fa-vuejs",
+      color: "#41B883",
+      background : "info",
+      flip : "zoom-in",
+      inspire : "inspired"
+    }, 
     {
       tech: "html",
       name: "about progress bar",
