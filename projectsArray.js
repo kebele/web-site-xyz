@@ -54,6 +54,17 @@ let projects = [
       flip : "flip-up",
       inspire : "partially inspired"
     },
+		{
+      tech: "js",
+      name: "truck driving",
+      code: "https://github.com/kebele/2d_truck_driving",
+      linkx: "https://2d-truck-driving.vercel.app/",
+      icon: "fab fa-js",
+      color: "#34495e",
+      background : "secondary",
+      flip : "flip-up",
+      inspire : "partially inspired"
+    },
     {
       tech: "js",
       name: "meal finder",
