@@ -164,6 +164,18 @@ let projects = [
       flip : "fade-up-right",
       inspire : "inspired"
     },
+	
+    {
+      tech: "html",
+      name: "recipes",
+      code: "https://github.com/kebele/yemek-tarifi-web",
+      linkx: "https://yemek-tarifi-web.vercel.app/",
+      icon: "fab fa-css3",
+      color: "#df4759",
+      background : "danger",
+      flip : "fade-down-right",
+      inspire : "inspired"
+    },
     {
       tech: "html",
       name: "aim & shoot",
