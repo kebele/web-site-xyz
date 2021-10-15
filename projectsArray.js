@@ -21,6 +21,17 @@ let projects = [
       flip : "flip-down",
       inspire : "inspired"
     },
+	{
+      tech: "js",
+      name: "chart.js deneme",
+      code: "https://github.com/kebele/chartjs_deneme",
+      linkx: "https://chartjs-deneme.vercel.app/",
+      icon: "fab fa-css3",
+      color: "#df4759",
+      background : "danger",
+      flip : "flip-down",
+      inspire : "inspired"
+    },
     {
       tech: "vue",
       name: "translator",
