@@ -87,6 +87,18 @@ let projects = [
       flip : "flip-up",
       inspire : "partially inspired"
     },
+	
+	    {
+      tech: "js",
+      name: "number guess",
+      code: "https://github.com/kebele/guess_number",
+      linkx: "https://guess-number-ecru.vercel.app/",
+      icon: "fab fa-js",
+      color: "#34495e",
+      background : "secondary",
+      flip : "flip-up",
+      inspire : "partially inspired"
+    },
 	    {
       tech: "vue",
       name: "calculator",
