@@ -43,6 +43,17 @@ let projects = [
       flip : "flip-right",
       inspire : "inspired"
     },
+	    {
+      tech: "vue",
+      name: "infinite scroll",
+      code: "https://github.com/kebele/vue-infinite-scroll",
+      linkx: "https://vue-infinite-scroll.vercel.app/",
+      icon: "fab fa-vuejs",
+      color: "#41B883",
+      background : "info",
+      flip : "flip-right",
+      inspire : "inspired"
+    },
     {
       tech: "react",
       name: "markdown preview",
