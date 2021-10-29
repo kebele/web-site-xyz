@@ -110,6 +110,17 @@ let projects = [
       flip : "flip-up",
       inspire : "partially inspired"
     },
+		{
+      tech: "js",
+      name: "sling ball game",
+      code: "https://github.com/kebele/matterjs_deneme",
+      linkx: "https://matterjs-deneme.vercel.app/",
+      icon: "fab fa-js",
+      color: "#34495e",
+      background : "secondary",
+      flip : "flip-up",
+      inspire : "partially inspired"
+    },
 	    {
       tech: "vue",
       name: "calculator",
