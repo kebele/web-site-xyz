@@ -26,7 +26,7 @@ let projects = [
       name: "chart.js deneme",
       code: "https://github.com/kebele/chartjs_deneme",
       linkx: "https://chartjs-deneme.vercel.app/",
-      icon: "fab fa-css3",
+      icon: "fab fa-js",
       color: "#df4759",
       background : "danger",
       flip : "flip-down",
@@ -75,6 +75,17 @@ let projects = [
       background : "secondary",
       flip : "flip-up",
       inspire : "partially inspired"
+    },
+		{
+      tech: "js",
+      name: "three.js deneme",
+      code: "https://github.com/kebele/threejs-deneme",
+      linkx: "https://threejs-deneme.vercel.app/",
+      icon: "fab fa-js",
+      color: "#df4759",
+      background : "danger",
+      flip : "flip-down",
+      inspire : "inspired"
     },
 		{
       tech: "js",
