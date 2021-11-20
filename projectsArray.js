@@ -10,6 +10,17 @@ let projects = [
       flip : "flip-left",
       inspire : "inspired"
     },
+	    {
+      tech: "vue",
+      name: "ip tracker app",
+      code: "https://github.com/kebele/vue_ip_tracker",
+      linkx: "https://vue-ip-tracker.vercel.app/",
+      icon: "fab fa-vuejs",
+      color: "#41B883",
+      background : "info",
+      flip : "flip-left",
+      inspire : "inspired"
+    },
     {
       tech: "html",
       name: "full page slider",
